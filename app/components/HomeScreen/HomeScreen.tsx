@@ -28,7 +28,7 @@ export function HomeScreen({
               </h1>
               <h3 className="text-base sm:text-2xl py-6">
                 A NEW ALBUM BY{' '}
-                <span className="text-purple-500">TALI$A KIDD</span>
+                <span className="text-purple-500">TALI$A klkmKIDD</span>
               </h3>
               <div className="flex text-gray-700 gap-4 justify-center sm:justify-start">
                 <svg
