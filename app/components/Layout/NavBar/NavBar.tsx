@@ -8,6 +8,7 @@ import Image from 'next/image';
 const navbarMainItems = [
   { ref: '/', label: 'HOME' },
   { ref: '/shop', label: 'MERCH' },
+  { ref: '/', label: 'MUSIC' },
 ];
 
 const navbarSecondrayItems = [
@@ -52,7 +53,7 @@ export function NavBar() {
                 'opacity-0 h-0',
                 '-rotate-45 translate-y-[-13px] bg-white',
               ]
-            : ['bg-gray-600', 'bg-gray-600', 'bg-gray-600']
+            : ['bg-black', 'bg-black', 'bg-black']
           ).map((className, index) => (
             <span
               key={index}
@@ -80,7 +81,7 @@ export function NavBar() {
             />
           </div>
           <h2 className="text-center text-2xl sm:text-[120px] z-20 sm:mt-[-150px]">
-            TALI$A KIDD
+            Mr Wrong Guy
           </h2>
         </div>
         <ul className="flex flex-col items-center gap-4 justify-end mt-4 sm:mt-[140px]">
