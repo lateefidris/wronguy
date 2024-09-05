@@ -4,6 +4,8 @@ import { products } from '@wix/stores';
 import { Events } from '@app/components/Events/Events';
 import testIds from '@app/utils/test-ids';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
+import HeroSection from './HeroSection';
+import MusicSection from './MusicSection';
 
 export function HomeScreen({
   events,
@@ -14,7 +16,7 @@ export function HomeScreen({
 }) {
   return (
     <div className="mx-auto relative">
-      <div className="relative">
+      {/* <div className="relative">
         <div className="flex sm:flex-row flex-col bg-zinc-900">
           <div className="basis-1/2 text-center sm:text-left relative">
             <div
@@ -102,37 +104,15 @@ export function HomeScreen({
           width={202}
           height={245}
         />
-      </div>
-      {events?.length ? (
-        <div className="bg-zinc-900 text-site pt-16 sm:p-20">
-          <Events events={events} />
-        </div>
-      ) : (
-        <div className="text-3xl w-full text-center p-9 box-border max-w-4xl mx-auto">
-          No events found. Click{' '}
-          <a
-            href="https://manage.wix.com/account/site-selector?actionUrl=https%3A%2F%2Fmanage.wix.com%2Fdashboard%2F%7BmetaSiteId%7D%2Fevents%3FreferralInfo%3DHeadless"
-            target="_blank"
-            rel="noreferrer"
-            className="text-purple-500"
-          >
-            here
-          </a>{' '}
-          to go to the business dashboard to add events. Once added, they will
-          appear here.
-        </div>
-      )}
+      </div> */}
+      <HeroSection />
+      <MusicSection />
       {productsForCategories.length ? (
-        <div className="flex gap-2 sm:gap-14 px-14 flex-col sm:flex-row">
+        <div className="flex gap-2 sm:gap-14 px-14 flex-col sm:flex-row bg-black">
           <div className="text-custom-1 text-center sm:text-left pt-10 sm:py-20 basis-1/2">
-            <h1 className="uppercase text-4xl sm:text-7xl text-center sm:text-left text-black">
+            <h1 className="uppercase text-4xl sm:text-7xl text-center sm:text-left text-white">
               Merch
             </h1>
-            <p className="text-lg my-10 text-black">
-              I am a paragraph. I’m a great space to write about what makes the
-              products special and explain how customers can benefit from these
-              items.
-            </p>
             <a
               href="/shop"
               className="btn-main rounded-2xl text-base px-8 py-2.5"
@@ -219,6 +199,25 @@ export function HomeScreen({
           </a>{' '}
           to go to the business dashboard to create event categories. Once
           added, they will appear here.
+        </div>
+      )}
+      {events?.length ? (
+        <div className="bg-zinc-900 text-site pt-16 sm:p-20">
+          <Events events={events} />
+        </div>
+      ) : (
+        <div className="text-3xl w-full text-center p-9 box-border max-w-4xl mx-auto">
+          No events found. Click{' '}
+          <a
+            href="https://manage.wix.com/account/site-selector?actionUrl=https%3A%2F%2Fmanage.wix.com%2Fdashboard%2F%7BmetaSiteId%7D%2Fevents%3FreferralInfo%3DHeadless"
+            target="_blank"
+            rel="noreferrer"
+            className="text-purple-500"
+          >
+            here
+          </a>{' '}
+          to go to the business dashboard to add events. Once added, they will
+          appear here.
         </div>
       )}
     </div>
