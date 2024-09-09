@@ -1,40 +1,23 @@
+// components/HomeScreen.tsx
 'use client';
-import { useEffect, useState } from 'react';
-import { wixEventsV2 as wixEvents } from '@wix/events';
+
+import { useState, useEffect } from 'react';
 import { products } from '@wix/stores';
 import { Events } from '@app/components/Events/Events';
 import HeroSection from './HeroSection';
 import MusicSection from './MusicSection';
 import { MarketSection } from './MarketSection';
-import { getWixClient } from '@app/hooks/useWixClientServer';
+import { wixEventsV2 as wixEvents } from '@wix/events';
 
-// Refactored HomeScreen component
 export default function HomeScreen({
   events,
+  products,
 }: {
   events: wixEvents.V3Event[];
+  products: products.Product[];
 }) {
-  const [items, setItems] = useState<products.Product[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function fetchProducts() {
-      const wixClient = await getWixClient();
-      try {
-        const response = await wixClient.products
-          .queryProducts()
-          .limit(3)
-          .find();
-        setItems(response.items);
-      } catch (err) {
-        console.error('Error fetching products:', err);
-      } finally {
-        setLoading(false); // Stop loading once the fetch is complete
-      }
-    }
-
-    fetchProducts();
-  }, []);
+  const [items, setItems] = useState<products.Product[]>(products);
+  const [loading, setLoading] = useState(false); // Set loading to false since products are already fetched
 
   return (
     <div className="mx-auto relative">
