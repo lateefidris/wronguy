@@ -1,7 +1,7 @@
 import { getWixClient } from '@app/hooks//useWixClientServer';
 import { wixEventsV2 as wixEvents } from '@wix/events';
 import { products } from '@wix/stores';
-import { HomeScreen } from '@app/components/HomeScreen/HomeScreen';
+import HomeScreen from '@app/components/HomeScreen/HomeScreen';
 
 export default async function Home() {
   const wixClient = await getWixClient();
@@ -40,7 +40,5 @@ export default async function Home() {
         .find()
     ).items;
   } catch (e) {}
-  return (
-    <HomeScreen events={events} productsForCategories={productsForCategories} />
-  );
+  return <HomeScreen events={events} />;
 }
