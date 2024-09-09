@@ -6,14 +6,23 @@ import testIds from '@app/utils/test-ids';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import HeroSection from './HeroSection';
 import MusicSection from './MusicSection';
+import { MarketSection } from './MarketSection';
+import { getWixClient } from '@app/hooks/useWixClientServer';
 
-export function HomeScreen({
+export async function HomeScreen({
   events,
   productsForCategories,
 }: {
   events: wixEvents.V3Event[];
   productsForCategories: { category: string; product: products.Product }[];
 }) {
+  const wixClient = await getWixClient();
+  let items: products.Product[] = [];
+  try {
+    items = (await wixClient.products.queryProducts().limit(3).find()).items;
+  } catch (err) {
+    console.error(err);
+  }
   return (
     <div className="mx-auto relative">
       {/* <div className="relative">
@@ -107,100 +116,8 @@ export function HomeScreen({
       </div> */}
       <HeroSection />
       <MusicSection />
-      {productsForCategories.length ? (
-        <div className="flex gap-2 sm:gap-14 px-14 flex-col sm:flex-row bg-black">
-          <div className="text-custom-1 text-center sm:text-left pt-10 sm:py-20 basis-1/2">
-            <h1 className="uppercase text-4xl sm:text-7xl text-center sm:text-left text-white">
-              Merch
-            </h1>
-            <a
-              href="/shop"
-              className="btn-main rounded-2xl text-base px-8 py-2.5"
-            >
-              Get Merch
-            </a>
-            {productsForCategories[1]?.product?.media?.mainMedia ? (
-              <div className="mt-10 sm:mt-[300px]">
-                <a href="/shop" className="h-auto max-w-full inline-block">
-                  <WixMediaImage
-                    media={
-                      productsForCategories[1]?.product!.media!.mainMedia!
-                        .image!.url!
-                    }
-                    width={800}
-                    height={800}
-                    alt={
-                      productsForCategories[1]?.product!.media!.mainMedia!
-                        .image!.altText!
-                    }
-                  />
-                </a>
-                <span className="font-bold text-2xl sm:text-5xl block text-center mt-[-15px] sm:mt-[-30px] text-black relative z-10">
-                  <a href="/shop">{productsForCategories[1]?.category}</a>
-                </span>
-              </div>
-            ) : null}
-          </div>
-          <div className="basis-1/2">
-            {productsForCategories[0]?.product?.media?.mainMedia ? (
-              <div className="mt-10 sm:mt-[220px]">
-                <a href="/shop" className="h-auto max-w-full inline-block">
-                  <WixMediaImage
-                    media={
-                      productsForCategories[0]?.product!.media!.mainMedia!
-                        .image!.url!
-                    }
-                    width={800}
-                    height={800}
-                    alt={
-                      productsForCategories[0]?.product!.media!.mainMedia!
-                        .image!.altText!
-                    }
-                  />
-                </a>
-                <span className="font-bold text-2xl sm:text-5xl block text-center mt-[-15px] sm:mt-[-30px] relative z-10">
-                  <a href="/shop">{productsForCategories[0]?.category}</a>
-                </span>
-              </div>
-            ) : null}
-            {productsForCategories[2]?.product?.media?.mainMedia ? (
-              <div className="mt-10 sm:mt-40">
-                <a href="/shop" className="h-auto max-w-full inline-block">
-                  <WixMediaImage
-                    media={
-                      productsForCategories[2]?.product?.media!.mainMedia!
-                        .image!.url!
-                    }
-                    width={800}
-                    height={800}
-                    alt={
-                      productsForCategories[2]?.product!.media!.mainMedia!
-                        .image!.altText!
-                    }
-                  />
-                </a>
-                <span className="font-bold text-2xl sm:text-5xl block text-center mt-[-15px] sm:mt-[-30px] relative z-10">
-                  <a href="/shop">{productsForCategories[2]?.category}</a>
-                </span>
-              </div>
-            ) : null}
-          </div>
-        </div>
-      ) : (
-        <div className="text-3xl w-full text-center p-9 box-border max-w-4xl mx-auto">
-          No categories found. Click{' '}
-          <a
-            href="https://manage.wix.com/account/site-selector?actionUrl=+https%3A%2F%2Fmanage.wix.com%2Fdashboard%2F%7BmetaSiteId%7D%2Fstore%2Fcategories%2Flist%3FreferralInfo%3DHeadless"
-            target="_blank"
-            rel="noreferrer"
-            className="text-purple-500"
-          >
-            here
-          </a>{' '}
-          to go to the business dashboard to create event categories. Once
-          added, they will appear here.
-        </div>
-      )}
+      <MarketSection items={items} />
+
       {events?.length ? (
         <div className="bg-zinc-900 text-site pt-16 sm:p-20">
           <Events events={events} />

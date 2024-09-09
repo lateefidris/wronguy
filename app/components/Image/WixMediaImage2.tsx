@@ -6,7 +6,7 @@ function getImageUrlForMedia(media: string, width: number, height: number) {
   return wixMedia.getScaledToFillImageUrl(media, width, height, {});
 }
 
-export function WixMediaImage({
+export function WixMediaImage2({
   media,
   height = 320,
   width = 640,
@@ -15,6 +15,7 @@ export function WixMediaImage({
   sizes = '10vw',
   objectFit,
   disableZoom = false,
+  itemName,
 }: {
   media?: string;
   alt?: string;
@@ -24,6 +25,7 @@ export function WixMediaImage({
   className?: string;
   disableZoom?: boolean;
   objectFit?: 'cover' | 'contain';
+  itemName: string;
 }) {
   const imageUrl = media
     ? getImageUrlForMedia(media || '', width, height)
@@ -36,8 +38,9 @@ export function WixMediaImage({
   };
 
   return (
-    <div className={`flex items-center justify-center h-full`}>
-      <div className="overflow-hidden relative group w-full h-full rounded-lg">
+    <div className="flex items-center justify-center h-full relative group w-full">
+      <div className="overflow-hidden relative w-full h-full rounded-2xl border-4 border-lime-300">
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
         <Image
           {...styleProps}
           src={imageUrl}
@@ -48,6 +51,11 @@ export function WixMediaImage({
           } transition duration-500 ease-in-out ${className}`}
         />
       </div>
+      {itemName && (
+        <div className="absolute inset-6 flex items-end justify-center z-20 text-white md:text-2xl text-xl">
+          <span>{itemName}</span>
+        </div>
+      )}
     </div>
   );
 }

@@ -13,13 +13,11 @@ const Footer = () => (
         FOR BOOKING REQUIREMENTS
       </h2>
       <p className="mt-10 text-xs sm:text-base">
-        INFO@MYSITE.COM | PHONE: 123-456-7890
+        INFO@MRWRONGGUY.COM | PHONE: 123-456-7890
       </p>
     </div>
     <div className="mx-auto flex flex-col-reverse items-center sm:flex-row gap-1 sm:gap-16 pt-3 sm:pt-11 pb-4 sm:pb-20 px-6 sm:px-14 text-12 sm:text-xs">
-      <p className="font-default mb-10 flex-1">
-        © 2023 BY TALI$A KIDD. CREATED ON NextJS.
-      </p>
+      <p className="font-default mb-10 flex-1">© 2024 BY EWOL SAMO</p>
       <a href="/terms">TERMS & CONDITIONS</a>
       <a href="/shipping">SHIPPING & RETURNS</a>
       <a href="/faq">FAQ&apos;S</a>

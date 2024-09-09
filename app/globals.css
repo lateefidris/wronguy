@@ -26,11 +26,11 @@
 
 @layer components {
   .btn-main {
-    @apply text-white;
+    @apply text-black;
     @apply text-sm;
     @apply font-medium;
-    @apply bg-purple-600;
-    @apply hover:bg-purple-800;
+    @apply bg-lime-300;
+    @apply hover:bg-lime-500;
     @apply focus:outline-none;
     @apply focus:ring-4;
     @apply focus:ring-gray-300;
