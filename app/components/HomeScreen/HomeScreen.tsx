@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from 'react';
 import { wixEventsV2 as wixEvents } from '@wix/events';
 import { products } from '@wix/stores';
