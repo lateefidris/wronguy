@@ -2,12 +2,20 @@ import { products } from '@wix/stores';
 import testIds from '@app/utils/test-ids';
 import { WixMediaImage2 } from '@app/components/Image/WixMediaImage2';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function MarketSection({ items }: { items: products.Product[] }) {
   return items.length ? (
-    <div className="bg-black pt-16 pb-6">
+    <div className="bg-black pt-16 pb-6 relative">
+      <Image
+        src="/images/MusicSectionGraphic.svg"
+        alt="Samo"
+        layout="fill"
+        objectFit="cover"
+        className="z-0 absolute opacity-10"
+      />
       <div className="flex justify-center items-center pb-4">
-        <div className="text-white text-3xl md:text-5xl border-4 rounded-3xl justify-center p-3 uppercase">
+        <div className="text-white text-3xl md:text-5xl border-4 rounded-3xl justify-center p-3 uppercase z-10">
           <span className="text-lime-300 font-bold">shop</span> market
         </div>
       </div>

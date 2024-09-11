@@ -18,7 +18,7 @@ export function Shop({ items }: { items: products.Product[] }) {
       </div>
       {items.length ? (
         <div
-          className="full-w overflow-hidden mx-auto text-center mt-[-200px] sm:mt-[-130px] px-10"
+          className="full-w overflow-hidden mx-auto text-center mt-[-200px] sm:mt-[-130px] px-10 bg-neutral-100"
           data-testid={testIds.PRODUCT_LIST.CONTAINER}
         >
           <ul className="grid sm:grid-cols-3 gap-8 grid-flow-row">
