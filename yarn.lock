@@ -6180,6 +6180,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-icons@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "react-icons@npm:5.3.0"
+  peerDependencies:
+    react: "*"
+  checksum: 3aa5f50e05aafc6d31e0d995fe0d98560069aa88717b24ce8aaa082a7e7b20ca95e1e19d847ed6e52d658a5a30e15826af20d7554bf993a743edd55586db62e3
+  languageName: node
+  linkType: hard
+
 "react-indiana-drag-scroll@npm:^2.2.0":
   version: 2.2.0
   resolution: "react-indiana-drag-scroll@npm:2.2.0"
@@ -7478,6 +7487,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-google-recaptcha-enterprise: ^1.0.3
+    react-icons: ^5.3.0
     tailwindcss: ^3.2.4
     typescript: 4.8.4
   languageName: unknown
