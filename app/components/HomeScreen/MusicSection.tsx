@@ -1,8 +1,24 @@
 import Image from 'next/image';
 import React from 'react';
 import MusicBG from '../Image/MusicBG';
+import { SiYoutubemusic, SiApplemusic, SiAmazonmusic } from 'react-icons/si';
+import MusicIcons from '../Icons/MusicIcons';
 
 const MusicSection = () => {
+  const iconLinks = [
+    {
+      icon: <SiYoutubemusic />,
+      url: 'https://music.youtube.com/channel/UCIPBE57lPBfZmzoCaaIcDJw',
+    },
+    {
+      icon: <SiApplemusic />,
+      url: 'https://music.apple.com/us/artist/ewol-samo/1155076567',
+    },
+    {
+      icon: <SiAmazonmusic />,
+      url: 'https://music.amazon.com/artists/B01M33VFXT/ewol-samo?do=play&agent=googleAssistant&ref=dmm_seo_google_gkp_artists',
+    },
+  ];
   return (
     <div className="bg-gradient-to-b from-lime-400 to-lime-800 flex justify-center relative">
       <h1 className="flex flex-col p-4 gap-4 text-4xl md:text-5xl text-center font-bold text-white pt-12 z-20">
@@ -26,11 +42,9 @@ const MusicSection = () => {
           style={{ borderRadius: '16px', flexGrow: 1 }}
         ></iframe>
       </div>
-      <h1 className="hidden sm:flex flex-col p-4 gap-4 text-4xl md:text-5xl text-center font-bold text-neutral-200 pt-16">
-        {'MUSIC'.split('').map((letter, index) => (
-          <span key={index}>{letter}</span>
-        ))}
-      </h1>
+      <div className="App">
+        <MusicIcons links={iconLinks} />
+      </div>
       <Image
         src="/images/MusicSectionGraphic.svg"
         alt="Samo"
