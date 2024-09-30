@@ -10,8 +10,8 @@ export function MarketSection({ items }: { items: products.Product[] }) {
       <Image
         src="/images/MusicSectionGraphic.svg"
         alt="Samo"
-        layout="fill"
-        objectFit="cover"
+        fill={true}
+        style={{ objectFit: 'cover' }}
         className="z-0 absolute opacity-10"
       />
       <div className="flex justify-center items-center pb-4">

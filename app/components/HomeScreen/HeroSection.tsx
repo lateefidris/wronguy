@@ -18,8 +18,8 @@ const HeroSection = () => {
         <Image
           src="/images/LPage_Pic.png"
           alt="Samo"
-          layout="fill"
-          objectFit="cover"
+          fill={true}
+          style={{ objectFit: 'cover' }}
         />
       </div>
 
@@ -28,8 +28,8 @@ const HeroSection = () => {
         <Image
           src="/images/Skyline.png"
           alt="Skyline"
-          layout="fill"
-          objectFit="cover"
+          fill={true}
+          style={{ objectFit: 'cover' }}
         />
       </div>
     </div>

@@ -48,8 +48,8 @@ const MusicSection = () => {
       <Image
         src="/images/MusicSectionGraphic.svg"
         alt="Samo"
-        layout="fill"
-        objectFit="cover"
+        fill={true}
+        style={{ objectFit: 'cover' }}
         className="z-0 absolute opacity-75"
       />
     </div>
