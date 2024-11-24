@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import MusicBG from '../Image/MusicBG';
-import { SiYoutubemusic, SiApplemusic, SiAmazonmusic } from 'react-icons/si';
+import { SiYoutubemusic, SiApplemusic, SiAmazon } from 'react-icons/si';
 import MusicIcons from '../Icons/MusicIcons';
 
 const MusicSection = () => {
@@ -15,7 +15,7 @@ const MusicSection = () => {
       url: 'https://music.apple.com/us/artist/ewol-samo/1155076567',
     },
     {
-      icon: <SiAmazonmusic />,
+      icon: <SiAmazon />,
       url: 'https://music.amazon.com/artists/B01M33VFXT/ewol-samo?do=play&agent=googleAssistant&ref=dmm_seo_google_gkp_artists',
     },
   ];

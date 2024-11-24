@@ -23,50 +23,47 @@ export function Shop({ items }: { items: products.Product[] }) {
         >
           <ul className="grid sm:grid-cols-3 gap-8 grid-flow-row">
             {items.map((item) => (
-              <li
-                key={item._id}
-                className="relative"
-                data-testid={testIds.PRODUCT_ITEM.CONTAINER}
-              >
-                <a
-                  href={`/product-page/${item.slug}`}
-                  data-testid={testIds.PRODUCT_ITEM.PRODUCT_DETAILS_CTA}
-                >
-                  <div className="h-auto max-w-full">
-                    <WixMediaImage
-                      media={item.media?.mainMedia?.image?.url}
-                      height={560}
-                      width={560}
-                      alt={
-                        item.media?.mainMedia?.image?.altText || 'main image'
-                      }
-                    />
-                  </div>
-                  {!item.manageVariants && item.stock?.inStock ? (
-                    <a
-                      data-testid={testIds.PRODUCT_ITEM.BUY_NOW_CTA}
-                      className="btn-main absolute -mt-9 left-0 cursor-pointer rounded-lg"
-                      href={`/api/quick-buy/${item._id}?quantity=1`}
-                    >
-                      Buy Now
-                    </a>
-                  ) : (
-                    <button
-                      className="btn-main absolute -mt-10 left-0 cursor-pointer"
-                      disabled
-                    >
-                      Out of Stock
-                    </button>
-                  )}
-                  <div className="p-2 text-left">
-                    <span>{item.name}</span>
-                    <br />
-                    <span className="text-xs">
-                      {item.price!.formatted!.price}
-                    </span>
-                  </div>
-                </a>
-              </li>
+             <li
+             key={item._id}
+             className="relative"
+             data-testid={testIds.PRODUCT_ITEM.CONTAINER}
+           >
+             <div className="h-auto max-w-full">
+               <a
+                 href={`/product-page/${item.slug}`}
+                 data-testid={testIds.PRODUCT_ITEM.PRODUCT_DETAILS_CTA}
+               >
+                 <WixMediaImage
+                   media={item.media?.mainMedia?.image?.url}
+                   height={560}
+                   width={560}
+                   alt={item.media?.mainMedia?.image?.altText || 'main image'}
+                 />
+               </a>
+             </div>
+             {!item.manageVariants && item.stock?.inStock ? (
+               <a
+                 data-testid={testIds.PRODUCT_ITEM.BUY_NOW_CTA}
+                 className="btn-main absolute -mt-9 left-0 cursor-pointer rounded-lg"
+                 href={`/api/quick-buy/${item._id}?quantity=1`}
+               >
+                 Buy Now
+               </a>
+             ) : (
+               <button
+                 className="btn-main absolute -mt-10 left-0 cursor-pointer"
+                 disabled
+               >
+                 Out of Stock
+               </button>
+             )}
+             <div className="p-2 text-left">
+               <span>{item.name}</span>
+               <br />
+               <span className="text-xs">{item.price!.formatted!.price}</span>
+             </div>
+           </li>
+           
             ))}
           </ul>
         </div>
