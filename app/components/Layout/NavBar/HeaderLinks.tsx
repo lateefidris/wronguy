@@ -3,10 +3,10 @@ import React from 'react';
 const LinksComponent = () => {
   // Array of link objects with href and text
   const links = [
-    { href: '/about', text: 'About' },
+    //{ href: '/about', text: 'About' },
     { href: '/shop', text: 'Merch' },
     { href: '/music', text: 'Music' },
-    { href: '/events', text: 'Events' },
+    { href: '/shows', text: 'Shows' },
   ];
 
   return (
