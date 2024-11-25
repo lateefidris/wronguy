@@ -2,7 +2,7 @@ import { getLatestTracks } from 'lib/spotify';
 
 // Metadata for the page
 export const metadata = {
-  title: 'Music - Artist Name',
+  title: 'Mr Wrong Guy - Music',
 };
 
 // TypeScript type for a Spotify track

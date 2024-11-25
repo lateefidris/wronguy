@@ -34,7 +34,7 @@ export const Events = ({ events }: { events: wixEvents.V3Event[] }) => {
                 }`}
               >
                 <div className="flex flex-col min-w-fit sm:flex-row overflow-hidden sm:gap-4 md:gap-8 relative">
-                  <div className="w-[310px] h-[171px] sm:w-[80px] sm:h-[80px] overflow-hidden sm:group-hover/event:opacity-0 transition-opacity duration-300">
+                  <div className="w-full h-[171px] sm:w-[80px] sm:h-[80px] overflow-hidden sm:group-hover/event:opacity-0 transition-opacity duration-300">
                     <WixMediaImage
                       media={event.mainImage}
                       width={300}
