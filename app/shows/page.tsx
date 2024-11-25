@@ -1,5 +1,3 @@
-
-
 import { Events } from '@app/components/Events/Events';
 import { wixEventsV2 as wixEvents } from '@wix/events';
 import { getWixClient } from '@app/hooks/useWixClientServer';

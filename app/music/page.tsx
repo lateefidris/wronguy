@@ -29,9 +29,7 @@ const MusicPage = async () => {
 
   return (
     <div className="music-page">
-       <div
-        className="bg-black text-custom-1 text-center py-4 sm:py-10 "
-      >
+      <div className="bg-black text-custom-1 text-center py-4 sm:py-10 ">
         <h1 className="uppercase text-3xl sm:text-6xl">Music</h1>
         <p className="text-sm sm:text-base mx-auto px-8 sm:max-w-[50%] my-10">
           I’m a paragraph. I’m a great space to write about what makes the
@@ -39,33 +37,36 @@ const MusicPage = async () => {
           items.
         </p>
       </div>
-  {tracks.length ? (
-    <ul className="track-list space-y-6 mt-6 flex flex-col items-center w-full">
-      {tracks.map((track) => (
-        <li
-          key={track.id}
-          className="track-item flex flex-col space-y-2 w-2/3 max-w-5xl"
-        >
-          <h2 className="text-xl font-medium">{track.name}</h2>
-          <p className="text-gray-600">{track.artists.map((artist) => artist.name).join(', ')}</p>
-          <div className="mt-4 w-full">
-            {/* Spotify Embed Player */}
-            <iframe
-              src={`https://open.spotify.com/embed/track/${track.id}`}
-              width="100%"
-              height="80"
-              allow="encrypted-media"
-              className="rounded"
-            />
-          </div>
-        </li>
-      ))}
-    </ul>
-  ) : (
-    <p className="text-red-500 text-center">No tracks available. Please check back later.</p>
-  )}
-</div>
-
+      {tracks.length ? (
+        <ul className="track-list space-y-6 mt-6 flex flex-col items-center w-full">
+          {tracks.map((track) => (
+            <li
+              key={track.id}
+              className="track-item flex flex-col space-y-2 w-2/3 max-w-5xl"
+            >
+              <h2 className="text-xl font-medium">{track.name}</h2>
+              <p className="text-gray-600">
+                {track.artists.map((artist) => artist.name).join(', ')}
+              </p>
+              <div className="mt-4 w-full">
+                {/* Spotify Embed Player */}
+                <iframe
+                  src={`https://open.spotify.com/embed/track/${track.id}`}
+                  width="100%"
+                  height="80"
+                  allow="encrypted-media"
+                  className="rounded"
+                />
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="text-red-500 text-center">
+          No tracks available. Please check back later.
+        </p>
+      )}
+    </div>
   );
 };
 

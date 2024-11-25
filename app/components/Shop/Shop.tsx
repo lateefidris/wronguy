@@ -11,9 +11,8 @@ export function Shop({ items }: { items: products.Product[] }) {
       >
         <h1 className="uppercase text-3xl sm:text-6xl">Merch</h1>
         <p className="text-sm sm:text-base mx-auto px-8 sm:max-w-[50%] my-10">
-          I’m a paragraph. I’m a great space to write about what makes the
-          products special and explain how customers can benefit from these
-          items.
+          a great space to write about what makes the products special and
+          explain how customers can benefit from these items.
         </p>
       </div>
       {items.length ? (
@@ -23,47 +22,50 @@ export function Shop({ items }: { items: products.Product[] }) {
         >
           <ul className="grid sm:grid-cols-3 gap-8 grid-flow-row">
             {items.map((item) => (
-             <li
-             key={item._id}
-             className="relative"
-             data-testid={testIds.PRODUCT_ITEM.CONTAINER}
-           >
-             <div className="h-auto max-w-full">
-               <a
-                 href={`/product-page/${item.slug}`}
-                 data-testid={testIds.PRODUCT_ITEM.PRODUCT_DETAILS_CTA}
-               >
-                 <WixMediaImage
-                   media={item.media?.mainMedia?.image?.url}
-                   height={560}
-                   width={560}
-                   alt={item.media?.mainMedia?.image?.altText || 'main image'}
-                 />
-               </a>
-             </div>
-             {!item.manageVariants && item.stock?.inStock ? (
-               <a
-                 data-testid={testIds.PRODUCT_ITEM.BUY_NOW_CTA}
-                 className="btn-main absolute -mt-9 left-0 cursor-pointer rounded-lg"
-                 href={`/api/quick-buy/${item._id}?quantity=1`}
-               >
-                 Buy Now
-               </a>
-             ) : (
-               <button
-                 className="btn-main absolute -mt-10 left-0 cursor-pointer"
-                 disabled
-               >
-                 Out of Stock
-               </button>
-             )}
-             <div className="p-2 text-left">
-               <span>{item.name}</span>
-               <br />
-               <span className="text-xs">{item.price!.formatted!.price}</span>
-             </div>
-           </li>
-           
+              <li
+                key={item._id}
+                className="relative"
+                data-testid={testIds.PRODUCT_ITEM.CONTAINER}
+              >
+                <div className="h-auto max-w-full">
+                  <a
+                    href={`/product-page/${item.slug}`}
+                    data-testid={testIds.PRODUCT_ITEM.PRODUCT_DETAILS_CTA}
+                  >
+                    <WixMediaImage
+                      media={item.media?.mainMedia?.image?.url}
+                      height={560}
+                      width={560}
+                      alt={
+                        item.media?.mainMedia?.image?.altText || 'main image'
+                      }
+                    />
+                  </a>
+                </div>
+                {!item.manageVariants && item.stock?.inStock ? (
+                  <a
+                    data-testid={testIds.PRODUCT_ITEM.BUY_NOW_CTA}
+                    className="btn-main absolute -mt-9 left-0 cursor-pointer rounded-lg"
+                    href={`/api/quick-buy/${item._id}?quantity=1`}
+                  >
+                    Buy Now
+                  </a>
+                ) : (
+                  <button
+                    className="btn-main absolute -mt-10 left-0 cursor-pointer"
+                    disabled
+                  >
+                    Out of Stock
+                  </button>
+                )}
+                <div className="p-2 text-left">
+                  <span>{item.name}</span>
+                  <br />
+                  <span className="text-xs">
+                    {item.price!.formatted!.price}
+                  </span>
+                </div>
+              </li>
             ))}
           </ul>
         </div>
