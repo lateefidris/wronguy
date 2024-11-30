@@ -20,8 +20,8 @@ const LoginComp = () => {
     openModalLogin();
   };
   return (
-    <button onClick={onLoginClick} className="flex relative">
-      {isLoggedIn ? 'Log Out' : 'Log In'}
+    <button onClick={onLoginClick} className="relative text-sm bg-gray-500 p-2 rounded-xl text-black hover:bg-lime-300 transition-all duration-300 hover:scale-110">
+      {isLoggedIn ? 'Sign Out' : 'Sign In'}
     </button>
   );
 };

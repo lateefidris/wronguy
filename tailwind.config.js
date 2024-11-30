@@ -15,6 +15,9 @@ module.exports = {
         'custom-1': '#FFF9F6',
         site: 'rgb(255,249,246)',
       },
+      fontFamily: {
+        bodyRock: ['Body_Rock', 'sans-serif'], // Map the custom font
+      },
       fontSize: {
         12: '12px',
       },

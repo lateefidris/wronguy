@@ -4,6 +4,7 @@ import { useCallback, useState } from 'react';
 import type { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import { Login } from '@app/components/Login/Login';
 
 const navbarMainItems = [
   { ref: '/', label: 'HOME' },
@@ -101,6 +102,9 @@ export function NavBar() {
               </StyledNavLink>
             </li>
           ))}
+          <div className='flex lg:hidden'>
+            <Login/>
+          </div>
           <div className="flex text-white gap-4 mt-4">
             <a
               href="https://www.facebook.com/bdsam.dadon/"
