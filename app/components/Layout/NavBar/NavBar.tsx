@@ -102,8 +102,8 @@ export function NavBar() {
               </StyledNavLink>
             </li>
           ))}
-          <div className='flex lg:hidden'>
-            <Login/>
+          <div className="flex lg:hidden">
+            <Login />
           </div>
           <div className="flex text-white gap-4 mt-4">
             <a

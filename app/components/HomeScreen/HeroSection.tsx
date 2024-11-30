@@ -7,7 +7,9 @@ const HeroSection = () => {
       style={{ minHeight: 'calc(100vh - 64px)' }}
     >
       <div className="flex flex-col pt-24">
-        <div className="text-6xl md:text-8xl font-bodyRock text-lime-300">MrWrongGuy</div>
+        <div className="text-6xl md:text-8xl font-bodyRock text-lime-300">
+          MrWrongGuy
+        </div>
         <div className="text-right uppercase font-black text-white md:text-xl text-md">
           Ewol Samo
         </div>
