@@ -283,12 +283,13 @@ export const LoginModal = () => {
                     </div>
                   ) : null}
                   {state === State.SIGNUP ? (
-                    <ReCAPTCHA
-                      size="normal"
-                      ref={captchaRef}
-                      sitekey={wixClient.auth.captchaVisibleSiteKey}
-                      onChange={(token) => setCaptcha(token || undefined)} // Fix: ensure it accepts string | undefined
-                    />
+                    // <ReCAPTCHA
+                    //   size="normal"
+                    //   ref={captchaRef}
+                    //   sitekey={wixClient.auth.captchaVisibleSiteKey}
+                    //   onChange={(token) => setCaptcha(token || undefined)} // Fix: ensure it accepts string | undefined
+                    // />
+                    <div></div>
                   ) : null}
                   <div className="w-full">
                     <Button

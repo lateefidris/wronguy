@@ -111,12 +111,12 @@ const Popup: React.FC<PopupProps> = ({ isOpen, closePopup }) => {
               required
             />
 
-            <ReCAPTCHA
+            {/* <ReCAPTCHA
               size="normal"
               ref={captchaRef}
               sitekey={wixClient.auth.captchaVisibleSiteKey}
               onChange={setCaptcha}
-            />
+            /> */}
 
             <button
               type="submit"
