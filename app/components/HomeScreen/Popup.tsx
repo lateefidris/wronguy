@@ -71,7 +71,7 @@ const Popup: React.FC<PopupProps> = ({ isOpen, closePopup }) => {
     <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
       <div className="bg-gray-200 rounded-lg shadow-xl max-w-xs md:max-w-2xl text-center flex">
         <div className="bg-gray-700 w-96 hidden md:block">
-          tacogfugfuyguyguyggyig
+          tacogfugfuyguy2guyggyig
         </div>
         <div className="p-6 pb-2">
           <h2 className="text-xl font-bold mb-4">Join the village!</h2>
