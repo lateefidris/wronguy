@@ -9,7 +9,8 @@
     "e2e": "yarn playwright test",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^4.36.0",
@@ -28,6 +29,7 @@
     "js-cookie": "^3.0.1",
     "jsurl": "^0.1.5",
     "next": "^13.4.9",
+    "patch-package": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-recaptcha-enterprise": "^1.0.3",
