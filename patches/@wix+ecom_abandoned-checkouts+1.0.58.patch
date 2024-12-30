@@ -1,0 +1,13 @@
+diff --git a/node_modules/@wix/ecom_abandoned-checkouts/src/ecom-v1-abandoned-checkout-abandoned-checkouts.context.ts b/node_modules/@wix/ecom_abandoned-checkouts/src/ecom-v1-abandoned-checkout-abandoned-checkouts.context.ts
+index 7b34b4d..1f12ac2 100644
+--- a/node_modules/@wix/ecom_abandoned-checkouts/src/ecom-v1-abandoned-checkout-abandoned-checkouts.context.ts
++++ b/node_modules/@wix/ecom_abandoned-checkouts/src/ecom-v1-abandoned-checkout-abandoned-checkouts.context.ts
+@@ -39,7 +39,7 @@ export {
+   Mode,
+   WebhookIdentityType,
+ } from './ecom-v1-abandoned-checkout-abandoned-checkouts.universal';
+-export {
++export type {
+   AbandonedCheckout,
+   V1BuyerInfo,
+   V1BuyerInfoIdOneOf,
