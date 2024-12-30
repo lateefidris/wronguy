@@ -155,6 +155,27 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@napi-rs/canvas-linux-x64-gnu@0.1.65":
+  version "0.1.65"
+  resolved "https://registry.npmjs.org/@napi-rs/canvas-linux-x64-gnu/-/canvas-linux-x64-gnu-0.1.65.tgz"
+  integrity sha512-wsp+atutw13OJXGU3DDkdngtBDoEg01IuK5xMe0L6VFPV8maGkh17CXze078OD5QJOc6kFyw3DDscMLOPF8+oA==
+
+"@napi-rs/canvas@^0.1.65":
+  version "0.1.65"
+  resolved "https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.65.tgz"
+  integrity sha512-YcFhXQcp+b2d38zFOJNbpyPHnIL7KAEkhJQ+UeeKI5IpE9B8Cpf/M6RiHPQXSsSqnYbrfFylnW49dyh2oeSblQ==
+  optionalDependencies:
+    "@napi-rs/canvas-android-arm64" "0.1.65"
+    "@napi-rs/canvas-darwin-arm64" "0.1.65"
+    "@napi-rs/canvas-darwin-x64" "0.1.65"
+    "@napi-rs/canvas-linux-arm-gnueabihf" "0.1.65"
+    "@napi-rs/canvas-linux-arm64-gnu" "0.1.65"
+    "@napi-rs/canvas-linux-arm64-musl" "0.1.65"
+    "@napi-rs/canvas-linux-riscv64-gnu" "0.1.65"
+    "@napi-rs/canvas-linux-x64-gnu" "0.1.65"
+    "@napi-rs/canvas-linux-x64-musl" "0.1.65"
+    "@napi-rs/canvas-win32-x64-msvc" "0.1.65"
+
 "@netlify/blobs@^2.2.0":
   version "2.2.0"
   resolved "https://registry.npmjs.org/@netlify/blobs/-/blobs-2.2.0.tgz"
@@ -281,11 +302,6 @@
   resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.5.8.tgz"
   integrity sha512-IhxeEpi+U85GU9p6bVSAFMwuCNRdpmHueM8Z9DRft8f70Rvt3Q9tNFJxqLxAbiGoNOR7TuLNjAw2wJucHfMw3g==
 
-"@next/swc-linux-x64-musl@13.5.8":
-  version "13.5.8"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.5.8.tgz"
-  integrity sha512-NQICDU7X/tcAVkTEfvpkq5Z1EViodDj3m18wiyJ5wpzOFf4LH7vFjLBVCWNcf3/sfqv/yfD8jshqrffOPtZitg==
-
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -316,11 +332,6 @@
   version "2.5.0"
   resolved "https://registry.npmjs.org/@parcel/watcher-linux-x64-glibc/-/watcher-linux-x64-glibc-2.5.0.tgz"
   integrity sha512-d9AOkusyXARkFD66S6zlGXyzx5RvY+chTP9Jp0ypSTC9d4lzyRs9ovGf/80VCxjKddcUvnsGwCHWuF2EoPgWjw==
-
-"@parcel/watcher-linux-x64-musl@2.5.0":
-  version "2.5.0"
-  resolved "https://registry.npmjs.org/@parcel/watcher-linux-x64-musl/-/watcher-linux-x64-musl-2.5.0.tgz"
-  integrity sha512-iqOC+GoTDoFyk/VYSFHwjHhYrk8bljW6zOhPuhi5t9ulqiYq1togGJB5e3PwYVFFfeVgc6pbz3JdQyDoBszVaA==
 
 "@parcel/watcher-wasm@^2.4.1":
   version "2.5.0"
@@ -895,155 +906,155 @@
     "@wix/ecom_totals-calculator" "1.0.28"
     "@wix/ecom_validations" "1.0.50"
 
-"@wix/events_categories@1.0.59":
-  version "1.0.59"
-  resolved "https://registry.npmjs.org/@wix/events_categories/-/events_categories-1.0.59.tgz"
-  integrity sha512-CwwVFtUT3XmIxjkcrDz6jZQJvwpHJkq48GUHUlN/o4axM8Uxoy3fn43kP5MrF7/oJ8rLzl/sth2h9k3YnbUF8g==
+"@wix/events_categories@1.0.60":
+  version "1.0.60"
+  resolved "https://registry.npmjs.org/@wix/events_categories/-/events_categories-1.0.60.tgz"
+  integrity sha512-60hCDa4cqWswoHTr/dSwxkBTpF2oIeEBcrRjg6lZZMi6PQKblzi5N6QI4PH5GwTByREJdjVURtgWPYb4gZjhDg==
   dependencies:
     "@wix/sdk-runtime" "^0.3.22"
     "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_forms@1.0.61":
-  version "1.0.61"
-  resolved "https://registry.npmjs.org/@wix/events_forms/-/events_forms-1.0.61.tgz"
-  integrity sha512-qXTxZwav0H72Gyvhojwpybs/9UWsyCnxKTSoIWbM7/zngrNJKpL8/t+Thhh1yTbSFL1H2vYAiQFMb1tc3Q98Ug==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_guests@1.0.89":
-  version "1.0.89"
-  resolved "https://registry.npmjs.org/@wix/events_guests/-/events_guests-1.0.89.tgz"
-  integrity sha512-FTpe+o8o3WJHiIxiHcSQTcm7ExJ0S7e8UlmMJ2R4vhn01pOUng+Y+yeEqJRprxpGF3+Y7pT+83SjNi/ATXTpYQ==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_notifications@1.0.49":
-  version "1.0.49"
-  resolved "https://registry.npmjs.org/@wix/events_notifications/-/events_notifications-1.0.49.tgz"
-  integrity sha512-x/bS8XrADSrrpcqKBzHCvEOOMMbLdYN97qi8BYRpec5AUYn9l77x/bxo4I7+eaFAJ2hNNdDnJswZSLudh7T5Kg==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_orders@1.0.72":
-  version "1.0.72"
-  resolved "https://registry.npmjs.org/@wix/events_orders/-/events_orders-1.0.72.tgz"
-  integrity sha512-T9lf17vmzyBAXZ9JuaUllgdJrw5Msv3u1Nm28Vt7UsLGO3E4nAWalz6EvphEVTwUzeED/mpVQwwsfhFH2usYvA==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_policies@1.0.59":
-  version "1.0.59"
-  resolved "https://registry.npmjs.org/@wix/events_policies/-/events_policies-1.0.59.tgz"
-  integrity sha512-iqNHkzfrf6vbAAzwAm8+RY0gQWvMrUCEwieJVH1+0Mn6Sj8H9KdmCFQndeVRvUhTbeXju2QquMbdKhoWaI2nuQ==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_ricos@1.0.32":
-  version "1.0.32"
-  resolved "https://registry.npmjs.org/@wix/events_ricos/-/events_ricos-1.0.32.tgz"
-  integrity sha512-mH/UA0EH1IMijK5BBSRsZ1hU08nGWSMOwcM7u3fuNXI5t44cJlDfQvitkFKjZP7ivCPmN+1Kn5/SdAxpCOSKmA==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_rsvp-v-2@1.0.35":
-  version "1.0.35"
-  resolved "https://registry.npmjs.org/@wix/events_rsvp-v-2/-/events_rsvp-v-2-1.0.35.tgz"
-  integrity sha512-JJM6LM884N5w5a6l4wsHyRmAo1/zC0xmI43aGJIR7XJIvLkT3X4rNZraeY8diCyKka5O8FtWZVCAvyy0uiGLig==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_rsvp@1.0.62":
+"@wix/events_forms@1.0.62":
   version "1.0.62"
-  resolved "https://registry.npmjs.org/@wix/events_rsvp/-/events_rsvp-1.0.62.tgz"
-  integrity sha512-mWrpeufPiytEXLYrytr+MQOHts25Lke/Oq5bm5DA4P2YqtpfjI/Hbgh2wTjF+SMeRBYAryguY7wnepTHYgVlew==
+  resolved "https://registry.npmjs.org/@wix/events_forms/-/events_forms-1.0.62.tgz"
+  integrity sha512-i6xyXWzz7M5FaiT6xTDeF1ilaQItB/MNmsw40WHvYXAw+aP5uuRM73fPL3C6Ek9dbhzxqKITVVX0N7VbgLwIgw==
   dependencies:
     "@wix/sdk-runtime" "^0.3.22"
     "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_schedule-bookmarks@1.0.47":
-  version "1.0.47"
-  resolved "https://registry.npmjs.org/@wix/events_schedule-bookmarks/-/events_schedule-bookmarks-1.0.47.tgz"
-  integrity sha512-fJ6n4hYj1Fo0LK/q2pC37FmQ+VntSpaKtJ424jj8P53Ea5LNvZhW0a/6gzY68ZVg3mBdmYYo4LHz5aoj3i3KDg==
+"@wix/events_guests@1.0.90":
+  version "1.0.90"
+  resolved "https://registry.npmjs.org/@wix/events_guests/-/events_guests-1.0.90.tgz"
+  integrity sha512-M78CZo1is/R8nJAKsQFuXdUkxv0oFWm+FU25Aza1VIdhU7UWnP0R6ZHS6IHwS8HiWIFU5nWk1BwDYSLphAEgJg==
   dependencies:
     "@wix/sdk-runtime" "^0.3.22"
     "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_schedule@1.0.51":
-  version "1.0.51"
-  resolved "https://registry.npmjs.org/@wix/events_schedule/-/events_schedule-1.0.51.tgz"
-  integrity sha512-euCYCUjPw548x9tQK9z2EdKhTRgV2JiYvwvNgFyIZEKS4tB4oz/j14dmrKT4ep7ifmQ5ogbnZpS+TUwaA1uxyA==
+"@wix/events_notifications@1.0.50":
+  version "1.0.50"
+  resolved "https://registry.npmjs.org/@wix/events_notifications/-/events_notifications-1.0.50.tgz"
+  integrity sha512-ReCZvBUjU9KST2Igci4Aiy4N+vSGEAGrtypxzo6wxjDUoJKVf9uNeP2vkoQXmhVx8Kgk+PP87bxOdIxOvAr2VQ==
   dependencies:
     "@wix/sdk-runtime" "^0.3.22"
     "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_staff-members@1.0.32":
-  version "1.0.32"
-  resolved "https://registry.npmjs.org/@wix/events_staff-members/-/events_staff-members-1.0.32.tgz"
-  integrity sha512-l1pmuaDZRFVhgdWSUu0f/E6FoIjSNlxTvAJwrfNz1594lT18vnIgN8yzjofifFSO2NujNnuRGI+ZtFL42rQ5LA==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_ticket-definitions-v-2@1.0.84":
-  version "1.0.84"
-  resolved "https://registry.npmjs.org/@wix/events_ticket-definitions-v-2/-/events_ticket-definitions-v-2-1.0.84.tgz"
-  integrity sha512-XU0KW94zUDsWC7np6OY57G0TZ8ELQB20fdnePAlW+CwZrm/DEdYv0E5xMANi8PzxmjoDGOd8LFCJAoRO0jtSKg==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_ticket-definitions@1.0.65":
-  version "1.0.65"
-  resolved "https://registry.npmjs.org/@wix/events_ticket-definitions/-/events_ticket-definitions-1.0.65.tgz"
-  integrity sha512-F8iE/RtUJuTotwmkt+h4m4Qs56P7+ZZ4d26uy3EvmeScZKgozzn719qw3My+4PJFBNWIOJ5HJhe7e11e8o9GXg==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_tickets@1.0.58":
-  version "1.0.58"
-  resolved "https://registry.npmjs.org/@wix/events_tickets/-/events_tickets-1.0.58.tgz"
-  integrity sha512-8okIGNqSqXo3DZI9wZua9jtfShuJbYD+slccecJf4FP7zJg6/OQIoAqx0MSt+P9kN/nK0IttQxg0mnvH6usOIw==
-  dependencies:
-    "@wix/sdk-runtime" "^0.3.22"
-    "@wix/sdk-types" "^1.12.4"
-
-"@wix/events_wix-events-v-2@1.0.73":
+"@wix/events_orders@1.0.73":
   version "1.0.73"
-  resolved "https://registry.npmjs.org/@wix/events_wix-events-v-2/-/events_wix-events-v-2-1.0.73.tgz"
-  integrity sha512-sA1YLebN6huowsPIrh4k1tvJedft0iYLnCDe17707MRoBaz6nLEpcDCY/Fp05Yn2uuWFcHVtSThbN+/uUAiDzA==
+  resolved "https://registry.npmjs.org/@wix/events_orders/-/events_orders-1.0.73.tgz"
+  integrity sha512-/YvRBsjmAuEOg4YPGjTjU936CIn0BenShFqCai0fooz52PvQ+FXePX9bu7ATBDwoDLmnRW23yrO2M01tah/LLQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_policies@1.0.60":
+  version "1.0.60"
+  resolved "https://registry.npmjs.org/@wix/events_policies/-/events_policies-1.0.60.tgz"
+  integrity sha512-f12jqhlCcaqgLtu+yp+aINWntOrIpQN+d1wSWtd6OvWtfsWCJKW7nUXXmMBvBaygPKamg1WNq3eumtE5b1aTYw==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_ricos@1.0.33":
+  version "1.0.33"
+  resolved "https://registry.npmjs.org/@wix/events_ricos/-/events_ricos-1.0.33.tgz"
+  integrity sha512-huhtm5KeQ22LOyyucn//RhPjzHUldM9VZIFKuLn58Ax7KtIUgyUUdPzhNiUcbHyYks5YVBzlwt6pkMrzWffqEw==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_rsvp-v-2@1.0.36":
+  version "1.0.36"
+  resolved "https://registry.npmjs.org/@wix/events_rsvp-v-2/-/events_rsvp-v-2-1.0.36.tgz"
+  integrity sha512-jgD3dTFZh9FjZFFzL1LqT+rytV9z5enWq+0gKCIXO90sMCgEKXrr9U7VVSS8KxIaBOBND13ihtYrznuUDsTtbw==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_rsvp@1.0.63":
+  version "1.0.63"
+  resolved "https://registry.npmjs.org/@wix/events_rsvp/-/events_rsvp-1.0.63.tgz"
+  integrity sha512-Ve4Sg3RhGbn4kELmEoG3ieMx/bPUhJWrG7EUdk4/XGrnhUreI073tjvUvA9cJJIdadiHSK6akjR/h1S0mJu9Lg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_schedule-bookmarks@1.0.48":
+  version "1.0.48"
+  resolved "https://registry.npmjs.org/@wix/events_schedule-bookmarks/-/events_schedule-bookmarks-1.0.48.tgz"
+  integrity sha512-o9qwmI4AU1adcYGHAvyxwdXBVKaWlCW/Tzdo1UKE8IIh9ecU6uAiUc5paolsZ1t/MbzifwwOjmkDGprd/NZ8KQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_schedule@1.0.52":
+  version "1.0.52"
+  resolved "https://registry.npmjs.org/@wix/events_schedule/-/events_schedule-1.0.52.tgz"
+  integrity sha512-0aVT4eYxz5QYZiMsXmmgCf2HMbiMjfLb31aXrz3C8ZJYfIw+o62s8MZJwySI9eLvzg/O2S79+tMu4eHJjyh1bw==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_staff-members@1.0.33":
+  version "1.0.33"
+  resolved "https://registry.npmjs.org/@wix/events_staff-members/-/events_staff-members-1.0.33.tgz"
+  integrity sha512-h9Loh+zzQj53ZU6hFIp/tITcRJdIkETJ1nora4TFMRSISplJDezk8+kv03yijGDXupaIpSubSi+sq7Y67AdUqA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_ticket-definitions-v-2@1.0.85":
+  version "1.0.85"
+  resolved "https://registry.npmjs.org/@wix/events_ticket-definitions-v-2/-/events_ticket-definitions-v-2-1.0.85.tgz"
+  integrity sha512-Ii51y/zo2lrN2xLIAh+snueOKar9f28aabsKscGY/ULPIQ7R9EUAcuQ6ciIQ0OcQ7XNnVZ8yPnwTabuAQAMWRg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_ticket-definitions@1.0.66":
+  version "1.0.66"
+  resolved "https://registry.npmjs.org/@wix/events_ticket-definitions/-/events_ticket-definitions-1.0.66.tgz"
+  integrity sha512-PdgxMmpHAgdw7UCCxmugZyU4j87xVk81LWLuHERv1fJm5knYZD/kvMpYoqHLvEK8JZPUMmR/rjV39k6OATFk9g==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_tickets@1.0.59":
+  version "1.0.59"
+  resolved "https://registry.npmjs.org/@wix/events_tickets/-/events_tickets-1.0.59.tgz"
+  integrity sha512-NwZKdXjU0YI7cUs3mZNJ7mFvC0cd4AAafKRGGh3LXyo5fUCLtPcPn6gxnASfAmWCtHei6mlMwJsEfGyXL4WClQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_wix-events-v-2@1.0.74":
+  version "1.0.74"
+  resolved "https://registry.npmjs.org/@wix/events_wix-events-v-2/-/events_wix-events-v-2-1.0.74.tgz"
+  integrity sha512-B9RuvlrZnzyWZDDKPgiM+sysND6GOLz2OFlK4snpCRd41kZPBOZKt9nZs3VyiBZq/UrkJa0JEXg4WG47NihRCA==
   dependencies:
     "@wix/sdk-runtime" "^0.3.22"
     "@wix/sdk-types" "^1.12.4"
 
 "@wix/events@^1.0.159":
-  version "1.0.368"
-  resolved "https://registry.npmjs.org/@wix/events/-/events-1.0.368.tgz"
-  integrity sha512-oS+FIGosegEO/mU7ScrD7zWKhgHA5XCr9VxHhpU0okbUskRQk/RjOZ+Tmfs0T1Nuz/TcYgqKOymem3K5rNBf9Q==
+  version "1.0.369"
+  resolved "https://registry.npmjs.org/@wix/events/-/events-1.0.369.tgz"
+  integrity sha512-h3V07X9j7lTyoJUPrCPj1aOW1G15Y9bJUZYW3aXenMTbZ8v4/Dff/VMOtCOHTcn9A82qEFcTOsGY56yDWoQWNQ==
   dependencies:
-    "@wix/events_categories" "1.0.59"
-    "@wix/events_forms" "1.0.61"
-    "@wix/events_guests" "1.0.89"
-    "@wix/events_notifications" "1.0.49"
-    "@wix/events_orders" "1.0.72"
-    "@wix/events_policies" "1.0.59"
-    "@wix/events_ricos" "1.0.32"
-    "@wix/events_rsvp" "1.0.62"
-    "@wix/events_rsvp-v-2" "1.0.35"
-    "@wix/events_schedule" "1.0.51"
-    "@wix/events_schedule-bookmarks" "1.0.47"
-    "@wix/events_staff-members" "1.0.32"
-    "@wix/events_ticket-definitions" "1.0.65"
-    "@wix/events_ticket-definitions-v-2" "1.0.84"
-    "@wix/events_tickets" "1.0.58"
-    "@wix/events_wix-events-v-2" "1.0.73"
+    "@wix/events_categories" "1.0.60"
+    "@wix/events_forms" "1.0.62"
+    "@wix/events_guests" "1.0.90"
+    "@wix/events_notifications" "1.0.50"
+    "@wix/events_orders" "1.0.73"
+    "@wix/events_policies" "1.0.60"
+    "@wix/events_ricos" "1.0.33"
+    "@wix/events_rsvp" "1.0.63"
+    "@wix/events_rsvp-v-2" "1.0.36"
+    "@wix/events_schedule" "1.0.52"
+    "@wix/events_schedule-bookmarks" "1.0.48"
+    "@wix/events_staff-members" "1.0.33"
+    "@wix/events_ticket-definitions" "1.0.66"
+    "@wix/events_ticket-definitions-v-2" "1.0.85"
+    "@wix/events_tickets" "1.0.59"
+    "@wix/events_wix-events-v-2" "1.0.74"
 
 "@wix/identity_authentication@1.0.21":
   version "1.0.21"

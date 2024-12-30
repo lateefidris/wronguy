@@ -12,6 +12,7 @@
     "lint": "next lint --fix"
   },
   "dependencies": {
+    "@napi-rs/canvas": "^0.1.65",
     "@netlify/plugin-nextjs": "^4.36.0",
     "@tanstack/react-query": "^4.18.0",
     "@types/js-cookie": "^3.0.3",
