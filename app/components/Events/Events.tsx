@@ -22,7 +22,7 @@ export const Events = ({ events }: { events: wixEvents.V3Event[] }) => {
         {events!.map((event) => (
           <div
             data-testid={testIds.TICKET_ITEM.CONTAINER}
-            className="group/event w-full flex flex-col items-center sm:items-stretch border-b last:border-0 hover:border-lime-400 gap-4 sm:gap-8 py-4 sm:py-0 transition-colors duration-300"
+            className="group/event w-full flex flex-col md:flex-row items-center sm:items-stretch border-b last:border-0 hover:border-lime-400 gap-4 sm:gap-8 py-4 sm:py-0 transition-colors duration-300"
             key={event._id}
           >
             <div className="flex flex-1 flex-col items-center sm:flex-row sm:items-center gap-4 sm:gap-4 md:gap-8 sm:py-3 w-full">

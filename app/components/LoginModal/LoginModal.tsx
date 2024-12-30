@@ -1,6 +1,5 @@
 'use client';
-
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Label, Modal, Spinner, TextInput } from 'flowbite-react';
 import { useUI } from '@app/components/Provider/context';
 import { useWixClient } from '@app/hooks/useWixClient';
@@ -29,7 +28,13 @@ export const LoginModal = () => {
   const [pending, setPending] = React.useState({ state: false, message: '' });
   const [passwordInvalid, setPasswordInvalid] = React.useState(false);
   const [emailInvalid, setEmailInvalid] = React.useState(false);
-  const [captcha, setCaptcha] = React.useState('');
+  const [captcha, setCaptcha] = React.useState<string | undefined>(undefined);
+  const [phones, setPhones] = React.useState<string[]>([]);
+
+  // OnChange handler for the phone input
+  const handlePhoneChange = (value: string) => {
+    setPhones([value]); // Wrap the input value in an array
+  };
 
   const captchaRef = React.useRef<ReCAPTCHA>(null);
 
@@ -82,8 +87,8 @@ export const LoginModal = () => {
       response = await wixClient.auth.register({
         email,
         password,
-        captchaTokens: { recaptchaToken: captcha },
-        profile: { nickname: username },
+        captchaTokens: { recaptchaToken: captcha }, // Use captcha with type `string | null`
+        profile: { nickname: username, phones },
       });
     }
 
@@ -120,6 +125,7 @@ export const LoginModal = () => {
     }
     captchaRef.current?.reset();
     setLoading(false);
+    console.log(response);
   };
 
   const stateTitle =
@@ -196,6 +202,19 @@ export const LoginModal = () => {
                         required={true}
                         onChange={(e) => setUsername(e.target.value)}
                       />
+                      <div className="mb-2 block mt-4">
+                        <Label htmlFor="phone" value="Phone Number" />
+                      </div>
+                      <TextInput
+                        id="phone"
+                        type="tel"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="123-456-7890"
+                        value={phones[0] || ''} // Safely access the first element
+                        color="primary"
+                        required={true}
+                        onChange={(e) => handlePhoneChange(e.target.value)}
+                      />
                     </div>
                   ) : null}
                   {state !== State.EMAIL_VERIFICATION ? (
@@ -254,23 +273,21 @@ export const LoginModal = () => {
                     </div>
                   ) : null}
                   {state === State.LOGIN ? (
-                    <>
-                      <div className="flex justify-between">
-                        <a
-                          onClick={() => setState(State.RESET_PASSWORD)}
-                          className="text-sm text-blue-700 hover:underline"
-                        >
-                          Forgot password?
-                        </a>
-                      </div>
-                    </>
+                    <div className="flex justify-between">
+                      <a
+                        onClick={() => setState(State.RESET_PASSWORD)}
+                        className="text-sm text-blue-700 hover:underline"
+                      >
+                        Forgot password?
+                      </a>
+                    </div>
                   ) : null}
                   {state === State.SIGNUP ? (
                     <ReCAPTCHA
                       size="normal"
                       ref={captchaRef}
                       sitekey={wixClient.auth.captchaVisibleSiteKey}
-                      onChange={setCaptcha}
+                      onChange={(token) => setCaptcha(token || undefined)} // Fix: ensure it accepts string | undefined
                     />
                   ) : null}
                   <div className="w-full">

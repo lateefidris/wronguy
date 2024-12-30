@@ -1,6 +1,27 @@
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Popup from './Popup';
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  // Show the popup only for new users (track using localStorage)
+  useEffect(() => {
+    const isReturningUser = localStorage.getItem('hasSeenPopup');
+    if (!isReturningUser) {
+      setIsPopupOpen(true);
+    }
+  }, []);
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+    localStorage.setItem('hasSeenPopup', 'true'); // Store flag in localStorage
+  };
+
+  const openPopup = () => {
+    setIsPopupOpen(true); // Open the popup when the button is clicked
+  };
+
   return (
     <div
       className="bg-gradient-to-b from-neutral-200 to-neutral-800 flex justify-center relative"
@@ -34,6 +55,21 @@ const HeroSection = () => {
           style={{ objectFit: 'cover' }}
         />
       </div>
+
+      {/* Popup component */}
+      <Popup isOpen={isPopupOpen} closePopup={closePopup} />
+
+      {/* Button to manually trigger popup */}
+      {!isPopupOpen && ( // Only show the button when the popup is not open
+        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-20">
+          <button
+            onClick={openPopup}
+            className=" text-white p-3 px-4 rounded-2xl hover:text-lime-400 border-2 border-gray-400 uppercase tracking-widest transition-all duration-500"
+          >
+            Join The Village
+          </button>
+        </div>
+      )}
     </div>
   );
 };

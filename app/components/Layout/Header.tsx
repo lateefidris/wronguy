@@ -3,6 +3,7 @@ import { NavBar } from './NavBar/NavBar';
 import { Login } from '@app/components/Login/Login';
 import testIds from '@app/utils/test-ids';
 import LinksComponent from './NavBar/HeaderLinks';
+import Link from 'next/link'; // Import Link from Next.js
 
 const Header = () => (
   <>
@@ -12,7 +13,10 @@ const Header = () => (
     >
       <div className="flex px-6 sm:px-10 h-header items-center justify-between">
         <h2 className="flex uppercase">
-          <a href="/">Mr Wrong Guy</a>
+          {/* Use Link here for client-side navigation */}
+          <Link href="/" className="text-black hover:text-lime-500">
+            Mr Wrong Guy
+          </Link>
         </h2>
         <div className="hidden lg:flex justify-center">
           <LinksComponent />

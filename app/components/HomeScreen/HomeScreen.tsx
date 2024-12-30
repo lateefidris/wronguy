@@ -37,17 +37,7 @@ export default function HomeScreen({
         </div>
       ) : (
         <div className="text-3xl w-full text-center p-9 box-border max-w-4xl mx-auto">
-          No events found. Click{' '}
-          <a
-            href="https://manage.wix.com/account/site-selector?actionUrl=https%3A%2F%2Fmanage.wix.com%2Fdashboard%2F%7BmetaSiteId%7D%2Fevents%3FreferralInfo%3DHeadless"
-            target="_blank"
-            rel="noreferrer"
-            className="text-purple-500"
-          >
-            here
-          </a>{' '}
-          to go to the business dashboard to add events. Once added, they will
-          appear here.
+          Subscribe for all the updates on upcoming shows and events
         </div>
       )}
     </div>
