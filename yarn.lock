@@ -155,27 +155,6 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@napi-rs/canvas-linux-x64-gnu@0.1.65":
-  version "0.1.65"
-  resolved "https://registry.npmjs.org/@napi-rs/canvas-linux-x64-gnu/-/canvas-linux-x64-gnu-0.1.65.tgz"
-  integrity sha512-wsp+atutw13OJXGU3DDkdngtBDoEg01IuK5xMe0L6VFPV8maGkh17CXze078OD5QJOc6kFyw3DDscMLOPF8+oA==
-
-"@napi-rs/canvas@^0.1.65":
-  version "0.1.65"
-  resolved "https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.65.tgz"
-  integrity sha512-YcFhXQcp+b2d38zFOJNbpyPHnIL7KAEkhJQ+UeeKI5IpE9B8Cpf/M6RiHPQXSsSqnYbrfFylnW49dyh2oeSblQ==
-  optionalDependencies:
-    "@napi-rs/canvas-android-arm64" "0.1.65"
-    "@napi-rs/canvas-darwin-arm64" "0.1.65"
-    "@napi-rs/canvas-darwin-x64" "0.1.65"
-    "@napi-rs/canvas-linux-arm-gnueabihf" "0.1.65"
-    "@napi-rs/canvas-linux-arm64-gnu" "0.1.65"
-    "@napi-rs/canvas-linux-arm64-musl" "0.1.65"
-    "@napi-rs/canvas-linux-riscv64-gnu" "0.1.65"
-    "@napi-rs/canvas-linux-x64-gnu" "0.1.65"
-    "@napi-rs/canvas-linux-x64-musl" "0.1.65"
-    "@napi-rs/canvas-win32-x64-msvc" "0.1.65"
-
 "@netlify/blobs@^2.2.0":
   version "2.2.0"
   resolved "https://registry.npmjs.org/@netlify/blobs/-/blobs-2.2.0.tgz"
@@ -302,6 +281,11 @@
   resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.5.8.tgz"
   integrity sha512-IhxeEpi+U85GU9p6bVSAFMwuCNRdpmHueM8Z9DRft8f70Rvt3Q9tNFJxqLxAbiGoNOR7TuLNjAw2wJucHfMw3g==
 
+"@next/swc-linux-x64-musl@13.5.8":
+  version "13.5.8"
+  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.5.8.tgz"
+  integrity sha512-NQICDU7X/tcAVkTEfvpkq5Z1EViodDj3m18wiyJ5wpzOFf4LH7vFjLBVCWNcf3/sfqv/yfD8jshqrffOPtZitg==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -332,6 +316,11 @@
   version "2.5.0"
   resolved "https://registry.npmjs.org/@parcel/watcher-linux-x64-glibc/-/watcher-linux-x64-glibc-2.5.0.tgz"
   integrity sha512-d9AOkusyXARkFD66S6zlGXyzx5RvY+chTP9Jp0ypSTC9d4lzyRs9ovGf/80VCxjKddcUvnsGwCHWuF2EoPgWjw==
+
+"@parcel/watcher-linux-x64-musl@2.5.0":
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/@parcel/watcher-linux-x64-musl/-/watcher-linux-x64-musl-2.5.0.tgz"
+  integrity sha512-iqOC+GoTDoFyk/VYSFHwjHhYrk8bljW6zOhPuhi5t9ulqiYq1togGJB5e3PwYVFFfeVgc6pbz3JdQyDoBszVaA==
 
 "@parcel/watcher-wasm@^2.4.1":
   version "2.5.0"
@@ -442,13 +431,6 @@
   version "18.0.8"
   resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.0.8.tgz"
   integrity sha512-C3GYO0HLaOkk9dDAz3Dl4sbe4AKUGTCfFIZsz3n/82dPNN8Du533HzKatDxeUYWu24wJgMP1xICqkWk1YOLOIw==
-  dependencies:
-    "@types/react" "*"
-
-"@types/react-google-recaptcha-enterprise@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/@types/react-google-recaptcha-enterprise/-/react-google-recaptcha-enterprise-1.0.3.tgz"
-  integrity sha512-9x6XSv7tObInaJWz+WWc3M0MTRZfhNlSEr0TS6U1Zw3+sFZT6kNvf5GfbhyGWpRaqdnw/imcAukthw1X85qP5Q==
   dependencies:
     "@types/react" "*"
 
@@ -4038,11 +4020,6 @@ react-icons@^4.10.1:
   version "4.12.0"
   resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.12.0.tgz"
   integrity sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==
-
-react-icons@^5.3.0:
-  version "5.4.0"
-  resolved "https://registry.npmjs.org/react-icons/-/react-icons-5.4.0.tgz"
-  integrity sha512-7eltJxgVt7X64oHh6wSWNwwbKTCtMfK35hcjvJS0yxEAhPM8oUKdS3+kqaW1vicIltw+kR2unHaa12S9pPALoQ==
 
 react-indiana-drag-scroll@^2.2.0:
   version "2.2.0"
