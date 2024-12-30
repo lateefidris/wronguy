@@ -8,8 +8,10 @@
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.20.6", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.23.2", "@babel/runtime@^7.25.0":
-  version "7.25.0"
+"@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.23.2", "@babel/runtime@^7.25.0":
+  version "7.26.0"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.26.0.tgz"
+  integrity sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -193,21 +195,20 @@
     "@netlify/node-cookies" "^0.1.0"
     urlpattern-polyfill "8.0.2"
 
-"@next/env@13.4.9":
-  version "13.4.9"
+"@next/env@13.5.8":
+  version "13.5.8"
+  resolved "https://registry.npmjs.org/@next/env/-/env-13.5.8.tgz"
+  integrity sha512-YmiG58BqyZ2FjrF2+5uZExL2BrLr8RTQzLXNDJ8pJr0O+rPlOeDPXp1p1/4OrR3avDidzZo3D8QO2cuDv1KCkw==
 
 "@next/eslint-plugin-next@13.5.6":
   version "13.5.6"
   dependencies:
     glob "7.1.7"
 
-"@next/swc-linux-x64-gnu@13.4.9":
-  version "13.4.9"
-
-"@next/swc-linux-x64-musl@13.4.9":
-  version "13.4.9"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.4.9.tgz"
-  integrity sha512-rlNf2WUtMM+GAQrZ9gMNdSapkVi3koSW3a+dmBVp42lfugWVvnyzca/xJlN48/7AGx8qu62WyO0ya1ikgOxh6A==
+"@next/swc-linux-x64-gnu@13.5.8":
+  version "13.5.8"
+  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.5.8.tgz"
+  integrity sha512-IhxeEpi+U85GU9p6bVSAFMwuCNRdpmHueM8Z9DRft8f70Rvt3Q9tNFJxqLxAbiGoNOR7TuLNjAw2wJucHfMw3g==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -273,11 +274,13 @@
 "@popperjs/core@^2.9.3":
   version "2.11.7"
 
-"@rushstack/eslint-patch@^1.1.0", "@rushstack/eslint-patch@^1.3.3":
+"@rushstack/eslint-patch@^1.3.3":
   version "1.5.0"
 
-"@swc/helpers@0.5.1":
-  version "0.5.1"
+"@swc/helpers@0.5.2":
+  version "0.5.2"
+  resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.2.tgz"
+  integrity sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==
   dependencies:
     tslib "^2.4.0"
 
@@ -368,456 +371,581 @@
 "@vercel/node-bridge@^2.1.0":
   version "2.2.2"
 
-"@wix/ecom_abandoned-checkouts@1.0.39":
+"@wix/ecom_abandoned-checkouts@1.0.58":
+  version "1.0.58"
+  resolved "https://registry.npmjs.org/@wix/ecom_abandoned-checkouts/-/ecom_abandoned-checkouts-1.0.58.tgz"
+  integrity sha512-lryewEGPMUquUshTSUaRizh0mq1fVfD5zmwJb19Zyu4hk1HF1tFskoOfeg4Pr4ygXJg7nDVzCQjRaG6oW2340w==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_additional-fees@1.0.39":
   version "1.0.39"
+  resolved "https://registry.npmjs.org/@wix/ecom_additional-fees/-/ecom_additional-fees-1.0.39.tgz"
+  integrity sha512-Xcbz8GbVWcqgAnhp7cxC91OqKy8/jyVPO9kr+rNI7cuukgU2+dhTLhhmmODFqBfpMq0WhTcIb24vlVRZfgODUA==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_additional-fees@1.0.15":
-  version "1.0.15"
+"@wix/ecom_back-in-stock-notifications@1.0.64":
+  version "1.0.64"
+  resolved "https://registry.npmjs.org/@wix/ecom_back-in-stock-notifications/-/ecom_back-in-stock-notifications-1.0.64.tgz"
+  integrity sha512-Itj283QpeQJ/XY5d6OSuvcRDUvtW3t6OTnKp9GSy/4/Hgz138TSy1cS7+LN2hhLfy4DGZPpRkkBM1152Y5ktXw==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_back-in-stock-notifications@1.0.43":
-  version "1.0.43"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_back-in-stock-settings@1.0.29":
-  version "1.0.29"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_cart@1.0.59":
-  version "1.0.59"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_checkout-content@1.0.0":
-  version "1.0.0"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_checkout-settings@1.0.43":
-  version "1.0.43"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_checkout-templates@1.0.66":
-  version "1.0.66"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_checkout@1.0.65":
-  version "1.0.65"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_currencies@1.0.30":
-  version "1.0.30"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_current-cart@1.0.59":
-  version "1.0.59"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_custom-triggers@1.0.13":
-  version "1.0.13"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_delivery-profile@1.0.10":
-  version "1.0.10"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_discount-rules@1.0.46":
+"@wix/ecom_back-in-stock-settings@1.0.46":
   version "1.0.46"
+  resolved "https://registry.npmjs.org/@wix/ecom_back-in-stock-settings/-/ecom_back-in-stock-settings-1.0.46.tgz"
+  integrity sha512-adUp77R8D6z4AAyVGjHvubmWxBUpUBCts01+yqzxrD9r7rrYdcm+laMdPe0KFPK4V94dYjJwGNHi8Evd+T24Hg==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_discounts-custom-trigger@1.0.1":
-  version "1.0.1"
+"@wix/ecom_cart@1.0.115":
+  version "1.0.115"
+  resolved "https://registry.npmjs.org/@wix/ecom_cart/-/ecom_cart-1.0.115.tgz"
+  integrity sha512-QHMmijCwaXyH+VhtyMP6B5iv/QRmva4FidVP49Y6rEbWeNNtNXaNp00EXhmzz8HQirhZCKz5m2zoIPe7VOV+9A==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_draft-orders@1.0.1":
-  version "1.0.1"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/ecom_local-delivery-options@1.0.2":
+"@wix/ecom_catalog@1.0.2":
   version "1.0.2"
+  resolved "https://registry.npmjs.org/@wix/ecom_catalog/-/ecom_catalog-1.0.2.tgz"
+  integrity sha512-DEVA4cILfXKUBXA38x+t9bfjH8EU5VJaWxSs9eoGKWd8dvBmOnFWMJm4jDZ86yJVsMKhNW9ySCzB85g3xxspzw==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_order-fulfillments@1.0.40":
+"@wix/ecom_checkout-content@1.0.17":
+  version "1.0.17"
+  resolved "https://registry.npmjs.org/@wix/ecom_checkout-content/-/ecom_checkout-content-1.0.17.tgz"
+  integrity sha512-AMDkh1t6nPOfNrodiwc3o5p+LsxfC88U5LPvnBa9FipLSiRWgTRlfwZbLiqhfwldEEMLWvfDurGiPhU/rHGtNg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_checkout-settings@1.0.63":
+  version "1.0.63"
+  resolved "https://registry.npmjs.org/@wix/ecom_checkout-settings/-/ecom_checkout-settings-1.0.63.tgz"
+  integrity sha512-YXWkA3VrU12RJZS4JewY+Cnjapusc7nfBXEt9csrtHTlEe9lYFOT4pM2s97QaQuR3ZERBiB5cWWWrFRqh5TrTg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_checkout-templates@1.0.117":
+  version "1.0.117"
+  resolved "https://registry.npmjs.org/@wix/ecom_checkout-templates/-/ecom_checkout-templates-1.0.117.tgz"
+  integrity sha512-dJjWpZKU/ac0pkeAuh2I8qkugef+9420bMecPbYARyTmFwAHV1vSwKsz0EeXRjfGNRGij1wG52RF5DOuriOlvw==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_checkout@1.0.120":
+  version "1.0.120"
+  resolved "https://registry.npmjs.org/@wix/ecom_checkout/-/ecom_checkout-1.0.120.tgz"
+  integrity sha512-awY9QAuWak4r9OfmsSm9IMFW3A305NChj+rszI8L1EeMh2Xkhr1kH6xHfqTo0veIm2qMpb74kv6G8+t90SmugQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_currencies@1.0.47":
+  version "1.0.47"
+  resolved "https://registry.npmjs.org/@wix/ecom_currencies/-/ecom_currencies-1.0.47.tgz"
+  integrity sha512-2dk07dmg0Olggclo2JKkqxBVmw7iKKhpehHMLa0iRTah0iMw6+zxf93Fj66D4N93aIc5ZZ88QZvL60Wb3R2/cg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_current-cart@1.0.115":
+  version "1.0.115"
+  resolved "https://registry.npmjs.org/@wix/ecom_current-cart/-/ecom_current-cart-1.0.115.tgz"
+  integrity sha512-PB5o33e1URKAurrUv8fr4QK1v8TfbHujuDsbZ7RIyKnFgsrjPQlbSJ+sia3JsBVHZeKyClzNcXJJ3S+Tctg63g==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_custom-triggers@1.0.33":
+  version "1.0.33"
+  resolved "https://registry.npmjs.org/@wix/ecom_custom-triggers/-/ecom_custom-triggers-1.0.33.tgz"
+  integrity sha512-3AXg7bYLPT5gCW06kwULtSAOu1pteSbD7sofnjbSBMSftbMQzrBjXWzQQJrgeit/rrjX4iXC5CkQydvLwGzhTQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_delivery-profile@1.0.40":
   version "1.0.40"
+  resolved "https://registry.npmjs.org/@wix/ecom_delivery-profile/-/ecom_delivery-profile-1.0.40.tgz"
+  integrity sha512-d6lS1S2RVWzHdjBGnyIAHG9H64QJe6Z7keRQ1NFLkWH/aiaja+zQhLHxTlqKzQtA1RvDARP8n5oel+TNXS8IUg==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_order-invoices@1.0.33":
-  version "1.0.33"
+"@wix/ecom_delivery-solutions@1.0.16":
+  version "1.0.16"
+  resolved "https://registry.npmjs.org/@wix/ecom_delivery-solutions/-/ecom_delivery-solutions-1.0.16.tgz"
+  integrity sha512-Kub765Z/M1eDvc5K4VjG+YltmDOcwaQeqlZFBrbH6YxHPkkYVRanx2yLVH1HjSn86dALGMKrATNfUJGSRak5nQ==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_order-payment-requests@1.0.0":
-  version "1.0.0"
+"@wix/ecom_discount-rules@1.0.65":
+  version "1.0.65"
+  resolved "https://registry.npmjs.org/@wix/ecom_discount-rules/-/ecom_discount-rules-1.0.65.tgz"
+  integrity sha512-hsgIgGw2oTUNKxgZvf0jx1qz/r9DBLi4xLZV+EaEyy/q7REKGvQTagSWC6Vfr4Leu6JN1lpfGUeQuwqCQfGSDw==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_order-transactions@1.0.55":
-  version "1.0.55"
+"@wix/ecom_discounts-custom-trigger@1.0.19":
+  version "1.0.19"
+  resolved "https://registry.npmjs.org/@wix/ecom_discounts-custom-trigger/-/ecom_discounts-custom-trigger-1.0.19.tgz"
+  integrity sha512-tS33UsHnEzRmwuGr4GXRTlYhigQG8LNBhxNF0uOZSwblD3OvbRfFKNQWsBDx5hFi3w6At5mhimmI1LsRgts29A==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_orders-settings@1.0.39":
-  version "1.0.39"
+"@wix/ecom_discounts@1.0.16":
+  version "1.0.16"
+  resolved "https://registry.npmjs.org/@wix/ecom_discounts/-/ecom_discounts-1.0.16.tgz"
+  integrity sha512-LADmqw7H0ni2X6tjP26MDymFqaVUutLCwLm1b1F2ANMWDBlQxo5HP6UytgLCegoMbhqsW+KkahGJWt6gdRbVKg==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_orders@1.0.90":
-  version "1.0.90"
+"@wix/ecom_draft-orders@1.0.53":
+  version "1.0.53"
+  resolved "https://registry.npmjs.org/@wix/ecom_draft-orders/-/ecom_draft-orders-1.0.53.tgz"
+  integrity sha512-hk6t1O2QL7kznM3LZoaDJSyGz2twLI45Xnk6//NgqCRwJB4QxrFFb0YD0q4QcrgwDD3PPwHXnYnH87UXYl8PhQ==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_payment-settings@1.0.21":
-  version "1.0.21"
+"@wix/ecom_gift-vouchers-provider@1.0.14":
+  version "1.0.14"
+  resolved "https://registry.npmjs.org/@wix/ecom_gift-vouchers-provider/-/ecom_gift-vouchers-provider-1.0.14.tgz"
+  integrity sha512-y+otkCVXGtGW14wnyPPuJ8b4YMoGUSc8GgvQaY9cShGtaz4HLhB/TT/+5PvbrNqpu974ESVvX/RhcK0X0TV7gw==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_pickup-locations@1.0.1":
-  version "1.0.1"
+"@wix/ecom_gift-vouchers@1.0.15":
+  version "1.0.15"
+  resolved "https://registry.npmjs.org/@wix/ecom_gift-vouchers/-/ecom_gift-vouchers-1.0.15.tgz"
+  integrity sha512-ganmVOYyd485Jmr2p0VpNMUPUF51kBghgMNe/Jzwymipds/67SD98jGapAU/8J/kfEhvnOdRnsIUxybwh3wx2w==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_recommendations@1.0.33":
-  version "1.0.33"
+"@wix/ecom_local-delivery-options@1.0.24":
+  version "1.0.24"
+  resolved "https://registry.npmjs.org/@wix/ecom_local-delivery-options/-/ecom_local-delivery-options-1.0.24.tgz"
+  integrity sha512-A1GPcvzfIaRcQgoJCp+CutqmF0OZlSAqgJg4LJ1gb2ohtkEyJ7748vD4yn0iiFnjcF4NBJGDbS+TJ9g79azMWg==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_shipping-options@1.0.1":
-  version "1.0.1"
+"@wix/ecom_memberships@1.0.12":
+  version "1.0.12"
+  resolved "https://registry.npmjs.org/@wix/ecom_memberships/-/ecom_memberships-1.0.12.tgz"
+  integrity sha512-FvUv9zYx1t6/onplgXEXPWsjP6vd/0OXowMQG1T9c4nSsdpT4rSGquUQ1RcaDM6t1hHnbKw/gEpQH3LRoWmHhg==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_shipping-rates@1.0.30":
-  version "1.0.30"
+"@wix/ecom_order-fulfillments@1.0.57":
+  version "1.0.57"
+  resolved "https://registry.npmjs.org/@wix/ecom_order-fulfillments/-/ecom_order-fulfillments-1.0.57.tgz"
+  integrity sha512-DZmJiHSConFUJPGXIJpNdvO0QK/uKCCh2szVq0bxfKiPCwywSOxHGqF8ss8iGdk6P+FapbpiGkSJH27rpKzUsQ==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_shippo-configurations@1.0.8":
-  version "1.0.8"
+"@wix/ecom_order-invoices@1.0.50":
+  version "1.0.50"
+  resolved "https://registry.npmjs.org/@wix/ecom_order-invoices/-/ecom_order-invoices-1.0.50.tgz"
+  integrity sha512-4fGmcAP25+6sGksFoSl2QLl2z7ydzXbL8yhdkprgZzsgaqscgH6NEf2+iSrpHMS1obgOS9UEOUWSoAA/YV/cGA==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/ecom_validations@1.0.18":
+"@wix/ecom_order-payment-requests@1.0.22":
+  version "1.0.22"
+  resolved "https://registry.npmjs.org/@wix/ecom_order-payment-requests/-/ecom_order-payment-requests-1.0.22.tgz"
+  integrity sha512-8TcqfC+MQ6jRpV5mGPOPdYC9J7cgPBuWOP1zQHH09LoCiiL1EIt1YHkL+NfAGT12vk0ottArZDf2CIq8J9yS/A==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_order-transactions@1.0.82":
+  version "1.0.82"
+  resolved "https://registry.npmjs.org/@wix/ecom_order-transactions/-/ecom_order-transactions-1.0.82.tgz"
+  integrity sha512-EnRTK2PcKu2CziGBTMdxKMQ2dfvxtiu/usjjMEwlB+Q0J3aUMzfff/o88JpheB0gaEn0zdLhZfjzMI/EwR7WIQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_orders-settings@1.0.57":
+  version "1.0.57"
+  resolved "https://registry.npmjs.org/@wix/ecom_orders-settings/-/ecom_orders-settings-1.0.57.tgz"
+  integrity sha512-CLE2NXwluZj1zihC5u0CG+JsyAsPKfBsJv0ERAEMwVTASMtt89ZNfSED3KKLEP4M4BENNERDIepXaAWBNO8FYQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_orders@1.0.161":
+  version "1.0.161"
+  resolved "https://registry.npmjs.org/@wix/ecom_orders/-/ecom_orders-1.0.161.tgz"
+  integrity sha512-s4zefnrYSzQrHEU5Ld0BdA9HOh8tJ9jUSMtODf2q00DOnFbipRfF7AJ5kPqi969J5x5Oe9/vwp+fwtlKN39ujg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_payment-settings@1.0.87":
+  version "1.0.87"
+  resolved "https://registry.npmjs.org/@wix/ecom_payment-settings/-/ecom_payment-settings-1.0.87.tgz"
+  integrity sha512-J29uIYhR39QAZWjJXWurLik6uK0s/UPs2dD77VjlRHpcZ+FxDO1suMv03+DNTag9C8dE91FsTbECs1pXIox0IA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_pickup-locations@1.0.20":
+  version "1.0.20"
+  resolved "https://registry.npmjs.org/@wix/ecom_pickup-locations/-/ecom_pickup-locations-1.0.20.tgz"
+  integrity sha512-KYpFmDSSirbnWa7uIW5cc0pj9rR73NEMyaSJtzRacYCMTCvZFOPIdrYB8007Z8MEDBDXigH4q9mtbA9rmNYizQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_recommendations-provider@1.0.14":
+  version "1.0.14"
+  resolved "https://registry.npmjs.org/@wix/ecom_recommendations-provider/-/ecom_recommendations-provider-1.0.14.tgz"
+  integrity sha512-Vq0qPrWE5wIimrG9MbLjhEwNZqsKTTBqZHIHfgdKKhetzwHL9IuIhWhKg+p3NnvrEeD5W6K8XifV60c48OuO2Q==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_recommendations@1.0.54":
+  version "1.0.54"
+  resolved "https://registry.npmjs.org/@wix/ecom_recommendations/-/ecom_recommendations-1.0.54.tgz"
+  integrity sha512-lu07jskv/WFUhsAaZqi6X+4qnzkqOJy6WIlIzHBotrX40K2I/q7kso2Mx5VBH9rvkwj9g/XQx+DUOfG+IbUpHg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_shipping-options@1.0.18":
   version "1.0.18"
+  resolved "https://registry.npmjs.org/@wix/ecom_shipping-options/-/ecom_shipping-options-1.0.18.tgz"
+  integrity sha512-6dUGdtblex08nel63qX/Y68JlkBdUIq22/ZmiZTkZkJNM1B06Lib+Ogu+sQFgsk5e9vwBRiumOPttTzMWAEusQ==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_shipping-rates@1.0.56":
+  version "1.0.56"
+  resolved "https://registry.npmjs.org/@wix/ecom_shipping-rates/-/ecom_shipping-rates-1.0.56.tgz"
+  integrity sha512-BW/lf6pyxwhN1IK0GVjJShxii+3oKoCc48Rs9YQcRlRrNlbVBCfewAZXF1biHbNPGCzPNPtBwiY6TAo5Y3lxjA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_shippo-configurations@1.0.26":
+  version "1.0.26"
+  resolved "https://registry.npmjs.org/@wix/ecom_shippo-configurations/-/ecom_shippo-configurations-1.0.26.tgz"
+  integrity sha512-sC2xVvn/dwjQn2s7zM+RLhLZ8M8xRVsXeGxbxQvfFB4jFI3gysz6yQSnyG0UwFcTQz4TK3iNpjMA+Y1hw6Z1iA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_subscription-contracts@1.0.16":
+  version "1.0.16"
+  resolved "https://registry.npmjs.org/@wix/ecom_subscription-contracts/-/ecom_subscription-contracts-1.0.16.tgz"
+  integrity sha512-+87Rk79ktIs+5p4SVWz/fEvmmxiNOvsmiygdx99aqqLML/KEJ3s9RT+RnGFi1+cMIS6jPQIEjEZP95UJgv5ljw==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_tip-settings@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/@wix/ecom_tip-settings/-/ecom_tip-settings-1.0.6.tgz"
+  integrity sha512-VIDdymDCI46kzqBozFrkFlxE9ByeJGA7AWFW2NX4Zb2hInRRrNNMVRJmZi9qVbezQkU6L3/B6A3tSx4CFBrofw==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_tippable-staff@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/@wix/ecom_tippable-staff/-/ecom_tippable-staff-1.0.6.tgz"
+  integrity sha512-z9mI9WPmF9n66/DqFgjQegfxid16qOZe8ATskm2b83PNiA6BxBNI0urFZUYLSqRR3/Ycc2JfBtEhIymiCVmx3A==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_tips@1.0.10":
+  version "1.0.10"
+  resolved "https://registry.npmjs.org/@wix/ecom_tips/-/ecom_tips-1.0.10.tgz"
+  integrity sha512-XEPhB1qN76SEiWcwfVl6IFrKgADtapyZ1dc8K/CkgTlfH2PEEWPvXcR5inHhgT6KF0qD/YlLEIiWjdDWVriQIg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_totals-calculator@1.0.28":
+  version "1.0.28"
+  resolved "https://registry.npmjs.org/@wix/ecom_totals-calculator/-/ecom_totals-calculator-1.0.28.tgz"
+  integrity sha512-TPTC7YPvLCY8SBTJKnJk2Wj1oiMx9+aNZJ90wQNiz2+9XRgsa9U2QiHWiJ+ED8W2QUxzhsof/j4qUgDXFW6anA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/ecom_validations@1.0.50":
+  version "1.0.50"
+  resolved "https://registry.npmjs.org/@wix/ecom_validations/-/ecom_validations-1.0.50.tgz"
+  integrity sha512-u7nGNp4AP99PdsRTqdY5BFCxbPlTHp3JbvuOMBX1M3fNakgrvgtrLtcTskwog1Ts1qPQOSlvY9YDykzseb3MGg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
 "@wix/ecom@^1.0.474":
-  version "1.0.692"
+  version "1.0.872"
+  resolved "https://registry.npmjs.org/@wix/ecom/-/ecom-1.0.872.tgz"
+  integrity sha512-GuMWxVknT87dJAPdlf6zh49jGA0SZgeMRlu/yvWVYuxqxZxcx41FDwn9caUs8mCwGDt7zwzQy2H3LCSa0HPovg==
   dependencies:
-    "@wix/ecom_abandoned-checkouts" "1.0.39"
-    "@wix/ecom_additional-fees" "1.0.15"
-    "@wix/ecom_back-in-stock-notifications" "1.0.43"
-    "@wix/ecom_back-in-stock-settings" "1.0.29"
-    "@wix/ecom_cart" "1.0.59"
-    "@wix/ecom_checkout" "1.0.65"
-    "@wix/ecom_checkout-content" "1.0.0"
-    "@wix/ecom_checkout-settings" "1.0.43"
-    "@wix/ecom_checkout-templates" "1.0.66"
-    "@wix/ecom_currencies" "1.0.30"
-    "@wix/ecom_current-cart" "1.0.59"
-    "@wix/ecom_custom-triggers" "1.0.13"
-    "@wix/ecom_delivery-profile" "1.0.10"
-    "@wix/ecom_discount-rules" "1.0.46"
-    "@wix/ecom_discounts-custom-trigger" "1.0.1"
-    "@wix/ecom_draft-orders" "1.0.1"
-    "@wix/ecom_local-delivery-options" "1.0.2"
-    "@wix/ecom_order-fulfillments" "1.0.40"
-    "@wix/ecom_order-invoices" "1.0.33"
-    "@wix/ecom_order-payment-requests" "1.0.0"
-    "@wix/ecom_order-transactions" "1.0.55"
-    "@wix/ecom_orders" "1.0.90"
-    "@wix/ecom_orders-settings" "1.0.39"
-    "@wix/ecom_payment-settings" "1.0.21"
-    "@wix/ecom_pickup-locations" "1.0.1"
-    "@wix/ecom_recommendations" "1.0.33"
-    "@wix/ecom_shipping-options" "1.0.1"
-    "@wix/ecom_shipping-rates" "1.0.30"
-    "@wix/ecom_shippo-configurations" "1.0.8"
-    "@wix/ecom_validations" "1.0.18"
+    "@wix/ecom_abandoned-checkouts" "1.0.58"
+    "@wix/ecom_additional-fees" "1.0.39"
+    "@wix/ecom_back-in-stock-notifications" "1.0.64"
+    "@wix/ecom_back-in-stock-settings" "1.0.46"
+    "@wix/ecom_cart" "1.0.115"
+    "@wix/ecom_catalog" "1.0.2"
+    "@wix/ecom_checkout" "1.0.120"
+    "@wix/ecom_checkout-content" "1.0.17"
+    "@wix/ecom_checkout-settings" "1.0.63"
+    "@wix/ecom_checkout-templates" "1.0.117"
+    "@wix/ecom_currencies" "1.0.47"
+    "@wix/ecom_current-cart" "1.0.115"
+    "@wix/ecom_custom-triggers" "1.0.33"
+    "@wix/ecom_delivery-profile" "1.0.40"
+    "@wix/ecom_delivery-solutions" "1.0.16"
+    "@wix/ecom_discount-rules" "1.0.65"
+    "@wix/ecom_discounts" "1.0.16"
+    "@wix/ecom_discounts-custom-trigger" "1.0.19"
+    "@wix/ecom_draft-orders" "1.0.53"
+    "@wix/ecom_gift-vouchers" "1.0.15"
+    "@wix/ecom_gift-vouchers-provider" "1.0.14"
+    "@wix/ecom_local-delivery-options" "1.0.24"
+    "@wix/ecom_memberships" "1.0.12"
+    "@wix/ecom_order-fulfillments" "1.0.57"
+    "@wix/ecom_order-invoices" "1.0.50"
+    "@wix/ecom_order-payment-requests" "1.0.22"
+    "@wix/ecom_order-transactions" "1.0.82"
+    "@wix/ecom_orders" "1.0.161"
+    "@wix/ecom_orders-settings" "1.0.57"
+    "@wix/ecom_payment-settings" "1.0.87"
+    "@wix/ecom_pickup-locations" "1.0.20"
+    "@wix/ecom_recommendations" "1.0.54"
+    "@wix/ecom_recommendations-provider" "1.0.14"
+    "@wix/ecom_shipping-options" "1.0.18"
+    "@wix/ecom_shipping-rates" "1.0.56"
+    "@wix/ecom_shippo-configurations" "1.0.26"
+    "@wix/ecom_subscription-contracts" "1.0.16"
+    "@wix/ecom_tip-settings" "1.0.6"
+    "@wix/ecom_tippable-staff" "1.0.6"
+    "@wix/ecom_tips" "1.0.10"
+    "@wix/ecom_totals-calculator" "1.0.28"
+    "@wix/ecom_validations" "1.0.50"
 
-"@wix/events_categories@1.0.35":
+"@wix/events_categories@1.0.59":
+  version "1.0.59"
+  resolved "https://registry.npmjs.org/@wix/events_categories/-/events_categories-1.0.59.tgz"
+  integrity sha512-CwwVFtUT3XmIxjkcrDz6jZQJvwpHJkq48GUHUlN/o4axM8Uxoy3fn43kP5MrF7/oJ8rLzl/sth2h9k3YnbUF8g==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_forms@1.0.61":
+  version "1.0.61"
+  resolved "https://registry.npmjs.org/@wix/events_forms/-/events_forms-1.0.61.tgz"
+  integrity sha512-qXTxZwav0H72Gyvhojwpybs/9UWsyCnxKTSoIWbM7/zngrNJKpL8/t+Thhh1yTbSFL1H2vYAiQFMb1tc3Q98Ug==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_guests@1.0.89":
+  version "1.0.89"
+  resolved "https://registry.npmjs.org/@wix/events_guests/-/events_guests-1.0.89.tgz"
+  integrity sha512-FTpe+o8o3WJHiIxiHcSQTcm7ExJ0S7e8UlmMJ2R4vhn01pOUng+Y+yeEqJRprxpGF3+Y7pT+83SjNi/ATXTpYQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_notifications@1.0.49":
+  version "1.0.49"
+  resolved "https://registry.npmjs.org/@wix/events_notifications/-/events_notifications-1.0.49.tgz"
+  integrity sha512-x/bS8XrADSrrpcqKBzHCvEOOMMbLdYN97qi8BYRpec5AUYn9l77x/bxo4I7+eaFAJ2hNNdDnJswZSLudh7T5Kg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_orders@1.0.72":
+  version "1.0.72"
+  resolved "https://registry.npmjs.org/@wix/events_orders/-/events_orders-1.0.72.tgz"
+  integrity sha512-T9lf17vmzyBAXZ9JuaUllgdJrw5Msv3u1Nm28Vt7UsLGO3E4nAWalz6EvphEVTwUzeED/mpVQwwsfhFH2usYvA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_policies@1.0.59":
+  version "1.0.59"
+  resolved "https://registry.npmjs.org/@wix/events_policies/-/events_policies-1.0.59.tgz"
+  integrity sha512-iqNHkzfrf6vbAAzwAm8+RY0gQWvMrUCEwieJVH1+0Mn6Sj8H9KdmCFQndeVRvUhTbeXju2QquMbdKhoWaI2nuQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_ricos@1.0.32":
+  version "1.0.32"
+  resolved "https://registry.npmjs.org/@wix/events_ricos/-/events_ricos-1.0.32.tgz"
+  integrity sha512-mH/UA0EH1IMijK5BBSRsZ1hU08nGWSMOwcM7u3fuNXI5t44cJlDfQvitkFKjZP7ivCPmN+1Kn5/SdAxpCOSKmA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/events_rsvp-v-2@1.0.35":
   version "1.0.35"
+  resolved "https://registry.npmjs.org/@wix/events_rsvp-v-2/-/events_rsvp-v-2-1.0.35.tgz"
+  integrity sha512-JJM6LM884N5w5a6l4wsHyRmAo1/zC0xmI43aGJIR7XJIvLkT3X4rNZraeY8diCyKka5O8FtWZVCAvyy0uiGLig==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_forms@1.0.35":
-  version "1.0.35"
+"@wix/events_rsvp@1.0.62":
+  version "1.0.62"
+  resolved "https://registry.npmjs.org/@wix/events_rsvp/-/events_rsvp-1.0.62.tgz"
+  integrity sha512-mWrpeufPiytEXLYrytr+MQOHts25Lke/Oq5bm5DA4P2YqtpfjI/Hbgh2wTjF+SMeRBYAryguY7wnepTHYgVlew==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_guests@1.0.48":
-  version "1.0.48"
+"@wix/events_schedule-bookmarks@1.0.47":
+  version "1.0.47"
+  resolved "https://registry.npmjs.org/@wix/events_schedule-bookmarks/-/events_schedule-bookmarks-1.0.47.tgz"
+  integrity sha512-fJ6n4hYj1Fo0LK/q2pC37FmQ+VntSpaKtJ424jj8P53Ea5LNvZhW0a/6gzY68ZVg3mBdmYYo4LHz5aoj3i3KDg==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_notifications@1.0.13":
-  version "1.0.13"
+"@wix/events_schedule@1.0.51":
+  version "1.0.51"
+  resolved "https://registry.npmjs.org/@wix/events_schedule/-/events_schedule-1.0.51.tgz"
+  integrity sha512-euCYCUjPw548x9tQK9z2EdKhTRgV2JiYvwvNgFyIZEKS4tB4oz/j14dmrKT4ep7ifmQ5ogbnZpS+TUwaA1uxyA==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_orders@1.0.36":
-  version "1.0.36"
+"@wix/events_staff-members@1.0.32":
+  version "1.0.32"
+  resolved "https://registry.npmjs.org/@wix/events_staff-members/-/events_staff-members-1.0.32.tgz"
+  integrity sha512-l1pmuaDZRFVhgdWSUu0f/E6FoIjSNlxTvAJwrfNz1594lT18vnIgN8yzjofifFSO2NujNnuRGI+ZtFL42rQ5LA==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_policies@1.0.34":
-  version "1.0.34"
+"@wix/events_ticket-definitions-v-2@1.0.84":
+  version "1.0.84"
+  resolved "https://registry.npmjs.org/@wix/events_ticket-definitions-v-2/-/events_ticket-definitions-v-2-1.0.84.tgz"
+  integrity sha512-XU0KW94zUDsWC7np6OY57G0TZ8ELQB20fdnePAlW+CwZrm/DEdYv0E5xMANi8PzxmjoDGOd8LFCJAoRO0jtSKg==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_rsvp@1.0.31":
-  version "1.0.31"
+"@wix/events_ticket-definitions@1.0.65":
+  version "1.0.65"
+  resolved "https://registry.npmjs.org/@wix/events_ticket-definitions/-/events_ticket-definitions-1.0.65.tgz"
+  integrity sha512-F8iE/RtUJuTotwmkt+h4m4Qs56P7+ZZ4d26uy3EvmeScZKgozzn719qw3My+4PJFBNWIOJ5HJhe7e11e8o9GXg==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_schedule-bookmarks@1.0.25":
-  version "1.0.25"
+"@wix/events_tickets@1.0.58":
+  version "1.0.58"
+  resolved "https://registry.npmjs.org/@wix/events_tickets/-/events_tickets-1.0.58.tgz"
+  integrity sha512-8okIGNqSqXo3DZI9wZua9jtfShuJbYD+slccecJf4FP7zJg6/OQIoAqx0MSt+P9kN/nK0IttQxg0mnvH6usOIw==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/events_schedule@1.0.29":
-  version "1.0.29"
+"@wix/events_wix-events-v-2@1.0.73":
+  version "1.0.73"
+  resolved "https://registry.npmjs.org/@wix/events_wix-events-v-2/-/events_wix-events-v-2-1.0.73.tgz"
+  integrity sha512-sA1YLebN6huowsPIrh4k1tvJedft0iYLnCDe17707MRoBaz6nLEpcDCY/Fp05Yn2uuWFcHVtSThbN+/uUAiDzA==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/events_staff-members@1.0.7":
-  version "1.0.7"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/events_ticket-definitions-v-2@1.0.42":
-  version "1.0.42"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/events_ticket-definitions@1.0.39":
-  version "1.0.39"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/events_tickets@1.0.33":
-  version "1.0.33"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/events_wix-events-v-2@1.0.40":
-  version "1.0.40"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
 "@wix/events@^1.0.159":
-  version "1.0.240"
+  version "1.0.368"
+  resolved "https://registry.npmjs.org/@wix/events/-/events-1.0.368.tgz"
+  integrity sha512-oS+FIGosegEO/mU7ScrD7zWKhgHA5XCr9VxHhpU0okbUskRQk/RjOZ+Tmfs0T1Nuz/TcYgqKOymem3K5rNBf9Q==
   dependencies:
-    "@wix/events_categories" "1.0.35"
-    "@wix/events_forms" "1.0.35"
-    "@wix/events_guests" "1.0.48"
-    "@wix/events_notifications" "1.0.13"
-    "@wix/events_orders" "1.0.36"
-    "@wix/events_policies" "1.0.34"
-    "@wix/events_rsvp" "1.0.31"
-    "@wix/events_schedule" "1.0.29"
-    "@wix/events_schedule-bookmarks" "1.0.25"
-    "@wix/events_staff-members" "1.0.7"
-    "@wix/events_ticket-definitions" "1.0.39"
-    "@wix/events_ticket-definitions-v-2" "1.0.42"
-    "@wix/events_tickets" "1.0.33"
-    "@wix/events_wix-events-v-2" "1.0.40"
+    "@wix/events_categories" "1.0.59"
+    "@wix/events_forms" "1.0.61"
+    "@wix/events_guests" "1.0.89"
+    "@wix/events_notifications" "1.0.49"
+    "@wix/events_orders" "1.0.72"
+    "@wix/events_policies" "1.0.59"
+    "@wix/events_ricos" "1.0.32"
+    "@wix/events_rsvp" "1.0.62"
+    "@wix/events_rsvp-v-2" "1.0.35"
+    "@wix/events_schedule" "1.0.51"
+    "@wix/events_schedule-bookmarks" "1.0.47"
+    "@wix/events_staff-members" "1.0.32"
+    "@wix/events_ticket-definitions" "1.0.65"
+    "@wix/events_ticket-definitions-v-2" "1.0.84"
+    "@wix/events_tickets" "1.0.58"
+    "@wix/events_wix-events-v-2" "1.0.73"
 
-"@wix/filter-builder@^1.0.20":
-  version "1.0.20"
+"@wix/identity_authentication@1.0.21":
+  version "1.0.21"
+  resolved "https://registry.npmjs.org/@wix/identity_authentication/-/identity_authentication-1.0.21.tgz"
+  integrity sha512-MFO36DUW5m9ofQ+IdT0aKuysSDrUvBndPQxDAeMdHexLMCjfOyMUzEc7rzQkoMuTCTu9iQoVXbX1I8CN+nm0JA==
   dependencies:
-    "@babel/runtime" "^7.20.6"
-    kind-of "~5.1.0"
-    tslib "^2.4.1"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/identity_authentication@1.0.10":
-  version "1.0.10"
+"@wix/identity_oauth@1.0.14":
+  version "1.0.14"
+  resolved "https://registry.npmjs.org/@wix/identity_oauth/-/identity_oauth-1.0.14.tgz"
+  integrity sha512-MQb8sNW2sv+dV55eLw9J5YbWFowqT8GAA/LNzubCuRK+xaMlAWCBUcUvr78a2vJ96L7ewcNq4e4swYm2dqsR5Q==
   dependencies:
-    "@wix/metro-runtime" "^1.1528.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.2.10"
-    "@wix/sdk-types" "^1.5.11"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/identity_oauth@1.0.8":
-  version "1.0.8"
+"@wix/identity_recovery@1.0.15":
+  version "1.0.15"
+  resolved "https://registry.npmjs.org/@wix/identity_recovery/-/identity_recovery-1.0.15.tgz"
+  integrity sha512-IKMOCyDXUVt/NdciN+0L0PXxHQ0rTtiIl65h8el+/YBDX51zx1oolA5kE6y95X+Za5VjwtLHHS5LFueKkbJvrg==
   dependencies:
-    "@wix/metro-runtime" "^1.1528.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.2.10"
-    "@wix/sdk-types" "^1.5.11"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/identity_recovery@1.0.8":
-  version "1.0.8"
+"@wix/identity_verification@1.0.15":
+  version "1.0.15"
+  resolved "https://registry.npmjs.org/@wix/identity_verification/-/identity_verification-1.0.15.tgz"
+  integrity sha512-QYuBmUFXFtyifFtz62JOdmqJYphIvRoHwxcSqfE1rvzVtphjsqxrqwZqm8AekH4120NuY5iC5F8I1/CN7uVFKg==
   dependencies:
-    "@wix/metro-runtime" "^1.1528.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.2.10"
-    "@wix/sdk-types" "^1.5.11"
-
-"@wix/identity_verification@1.0.8":
-  version "1.0.8"
-  dependencies:
-    "@wix/metro-runtime" "^1.1528.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.2.10"
-    "@wix/sdk-types" "^1.5.11"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
 "@wix/identity@^1.0.78":
-  version "1.0.80"
+  version "1.0.99"
+  resolved "https://registry.npmjs.org/@wix/identity/-/identity-1.0.99.tgz"
+  integrity sha512-efVEFROwzwIIE+xFKWmC7XYFHhX+cn4Ezq6uI+AwqQsCvhHA6NHHWg9u8fLbsu4MLH36bysafGHR0/roncg54A==
   dependencies:
-    "@wix/identity_authentication" "1.0.10"
-    "@wix/identity_oauth" "1.0.8"
-    "@wix/identity_recovery" "1.0.8"
-    "@wix/identity_verification" "1.0.8"
+    "@wix/identity_authentication" "1.0.21"
+    "@wix/identity_oauth" "1.0.14"
+    "@wix/identity_recovery" "1.0.15"
+    "@wix/identity_verification" "1.0.15"
 
 "@wix/image-kit@^1.78.0":
   version "1.78.0"
@@ -825,128 +953,36 @@
     "@babel/runtime" "^7.25.0"
     tslib "^2.6.3"
 
-"@wix/metro-public-utils@1.0.29":
-  version "1.0.29"
+"@wix/monitoring-types@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/@wix/monitoring-types/-/monitoring-types-0.1.0.tgz"
+  integrity sha512-3MpOHqA7r3lwD2QVqhSul0vPvgq5ak4q7Ewe9xTn/rUex3oH5dOmR9Fzvp2VfklReY/zOAxMPTKa7DvrPAuhmg==
+
+"@wix/redirects_redirects@1.0.39":
+  version "1.0.39"
+  resolved "https://registry.npmjs.org/@wix/redirects_redirects/-/redirects_redirects-1.0.39.tgz"
+  integrity sha512-cOO5oAaBVjeDANnz3Rf2tkn8lOJAFu6b5cF0T0yV2FXOsYgS6w8K+ai6JBCghCmZRelR0OL6Ooy3imsbAUlRlw==
   dependencies:
-    "@babel/runtime" "^7.0.0"
-
-"@wix/metro-runtime@^1.1528.0", "@wix/metro-runtime@^1.1696.0":
-  version "1.1697.0"
-  dependencies:
-    "@wix/metro-public-utils" "1.0.29"
-    "@wix/motion-edm-autogen-p13n" "1.0.64"
-    "@wix/motion-edm-autogen-transformations" "1.52.0"
-    "@wix/motion-edm-autogen-transformations-core" "1.48.0"
-    js-base64 "^3.7.7"
-    lodash "^4.17.21"
-    long "^4.0.0"
-    querystring "^0.2.1"
-
-"@wix/motion-edm-autogen-common@1.21.0":
-  version "1.21.0"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    "@wix/motion-edm-autogen-types" "1.0.11"
-    lodash "~4.17.0"
-    tslib "^2.0.0"
-
-"@wix/motion-edm-autogen-common@1.44.0":
-  version "1.44.0"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    "@wix/motion-edm-autogen-types" "1.0.32"
-    lodash "~4.17.0"
-    tslib "^2.0.0"
-
-"@wix/motion-edm-autogen-p13n@1.0.64":
-  version "1.0.64"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    "@wix/motion-edm-autogen-types" "1.0.32"
-    lodash "~4.17.0"
-
-"@wix/motion-edm-autogen-query-wrapper@^1.0.37":
-  version "1.0.37"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    "@wix/filter-builder" "^1.0.20"
-    "@wix/motion-edm-autogen-common" "1.21.0"
-    "@wix/motion-edm-autogen-transformations-core" "1.24.0"
-    lodash "~4.17.0"
-    long "~4.0.0"
-    tslib "^2.0.0"
-
-"@wix/motion-edm-autogen-transformations-core@1.24.0":
-  version "1.24.0"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    "@rushstack/eslint-patch" "^1.1.0"
-    "@wix/motion-edm-autogen-common" "1.21.0"
-    constant-case "~3.0.0"
-    deep-for-each "~3.0.0"
-    jsonpath-plus "~5.1.0"
-    lodash "~4.17.0"
-    tslib "^2.0.0"
-
-"@wix/motion-edm-autogen-transformations-core@1.48.0":
-  version "1.48.0"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    "@rushstack/eslint-patch" "^1.1.0"
-    "@wix/motion-edm-autogen-common" "1.44.0"
-    constant-case "~3.0.0"
-    deep-for-each "~3.0.0"
-    jsonpath-plus "~5.1.0"
-    lodash "~4.17.0"
-    tslib "^2.0.0"
-
-"@wix/motion-edm-autogen-transformations@1.52.0":
-  version "1.52.0"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    "@rushstack/eslint-patch" "^1.1.0"
-    "@wix/motion-edm-autogen-common" "1.44.0"
-    "@wix/motion-edm-autogen-transformations-core" "1.48.0"
-    constant-case "~3.0.0"
-    deep-for-each "~3.0.0"
-    http-status-codes "^2.0.0"
-    js-yaml "~4.1.0"
-    jsonpath-plus "~5.1.0"
-    lodash "~4.17.0"
-    tslib "^2.0.0"
-
-"@wix/motion-edm-autogen-types@1.0.11":
-  version "1.0.11"
-
-"@wix/motion-edm-autogen-types@1.0.32":
-  version "1.0.32"
-
-"@wix/redirects_redirects@1.0.21":
-  version "1.0.21"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.11"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
 "@wix/redirects@^1.0.13", "@wix/redirects@^1.0.41":
-  version "1.0.51"
+  version "1.0.70"
+  resolved "https://registry.npmjs.org/@wix/redirects/-/redirects-1.0.70.tgz"
+  integrity sha512-l4pU2h1G+H+vHVTtDw7MtjwFTnl4m8/IHHo7DXDZwvwTjzgad9fS7EUMZ1SrReSaDIqXCTLYB/HoKuF1Q0LNIw==
   dependencies:
-    "@wix/redirects_redirects" "1.0.21"
+    "@wix/redirects_redirects" "1.0.39"
 
 "@wix/sdk-context@^0.0.1":
   version "0.0.1"
 
-"@wix/sdk-runtime@^0.2.10":
-  version "0.2.12"
-  dependencies:
-    "@wix/sdk-types" "^1.7.0"
-
-"@wix/sdk-runtime@^0.3.11", "@wix/sdk-runtime@^0.3.14":
-  version "0.3.14"
+"@wix/sdk-runtime@^0.3.22":
+  version "0.3.28"
+  resolved "https://registry.npmjs.org/@wix/sdk-runtime/-/sdk-runtime-0.3.28.tgz"
+  integrity sha512-W0UTj9Rn95J7Z4qK8pLkASwSxVTrtWo+J2NvgmNhT/gaWyvaP+nVCZmcywiZj/C/z08rBZdyclIKscYfD2EQ0Q==
   dependencies:
     "@wix/sdk-context" "^0.0.1"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-types" "^1.12.8"
 
 "@wix/sdk-runtime@0.3.16":
   version "0.3.16"
@@ -954,11 +990,12 @@
     "@wix/sdk-context" "^0.0.1"
     "@wix/sdk-types" "^1.9.3"
 
-"@wix/sdk-types@^1.5.11", "@wix/sdk-types@^1.7.0", "@wix/sdk-types@^1.9.2":
-  version "1.9.2"
-
-"@wix/sdk-types@^1.9.3":
-  version "1.9.3"
+"@wix/sdk-types@^1.12.4", "@wix/sdk-types@^1.12.8", "@wix/sdk-types@^1.9.3":
+  version "1.12.8"
+  resolved "https://registry.npmjs.org/@wix/sdk-types/-/sdk-types-1.12.8.tgz"
+  integrity sha512-igTYTHTt716FVJHgPLSTJfj9RJscm1ukE7bsltN+gDqo6I0zpZdevnZqjuwVGqk8hVtgYXmYP/uubnYBzfir+Q==
+  dependencies:
+    "@wix/monitoring-types" "^0.1.0"
 
 "@wix/sdk@^1.5.0":
   version "1.12.12"
@@ -978,126 +1015,128 @@
   optionalDependencies:
     graphql "^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0"
 
-"@wix/stores_brands-v-3@1.0.1":
-  version "1.0.1"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/stores_catalog-provision@1.0.1":
-  version "1.0.1"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/stores_collections@1.0.26":
-  version "1.0.26"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/stores_customizations-v-3@1.0.1":
-  version "1.0.1"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/stores_info-sections-v-3@1.0.1":
-  version "1.0.1"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/stores_inventory-items-v-3@1.0.3":
-  version "1.0.3"
-  dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
-
-"@wix/stores_inventory@1.0.30":
+"@wix/stores_brands-v-3@1.0.30":
   version "1.0.30"
+  resolved "https://registry.npmjs.org/@wix/stores_brands-v-3/-/stores_brands-v-3-1.0.30.tgz"
+  integrity sha512-ezwlDE22cJ9wBtcK4QVEp2hXQvU+tuFigzmWs4I9Pi+KXihOZG34nK6PZ2irJSwhdUXtQODXY+vFw3qdBhmL/w==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/stores_products-v-3@1.0.6":
-  version "1.0.6"
+"@wix/stores_catalog-versioning@1.0.17":
+  version "1.0.17"
+  resolved "https://registry.npmjs.org/@wix/stores_catalog-versioning/-/stores_catalog-versioning-1.0.17.tgz"
+  integrity sha512-ht4q+IdbIJzEjfzSWG7TBOOuM/WdbZLV12SsbmKCig3mNhgPD5WRbKt1aM3sIrrFTV0FkxBCuzHxrgFwlcYnew==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/stores_products@1.0.36":
-  version "1.0.36"
+"@wix/stores_collections@1.0.51":
+  version "1.0.51"
+  resolved "https://registry.npmjs.org/@wix/stores_collections/-/stores_collections-1.0.51.tgz"
+  integrity sha512-SIRmCbA8cViGuyZlOFajuHH3kPpt9Y6HK7qsHiq/wNVwSCQIqH1hfbSLaefZBBgR5QEvS73niucl+J105gQqFg==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/stores_ribbons-v-3@1.0.1":
-  version "1.0.1"
+"@wix/stores_customizations-v-3@1.0.32":
+  version "1.0.32"
+  resolved "https://registry.npmjs.org/@wix/stores_customizations-v-3/-/stores_customizations-v-3-1.0.32.tgz"
+  integrity sha512-YxQnoFfEtwRwxydJxYf/9Wm/qZtKXQVIdP1M9TukG8eJeZV4T+ivGfXXgaD8vjHhtYuKfOh/RdXDz53Ih1oI1w==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/stores_stores-locations-v-3@1.0.1":
-  version "1.0.1"
+"@wix/stores_info-sections-v-3@1.0.31":
+  version "1.0.31"
+  resolved "https://registry.npmjs.org/@wix/stores_info-sections-v-3/-/stores_info-sections-v-3-1.0.31.tgz"
+  integrity sha512-VTHfoAt2l1eKPdFk33tbAec9EeNSusgGHmrDVsCOUdx4pPmp/tUbKcsPRc9FY/dcJUEYLyWKa5ftHL57LCAIUQ==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/stores_subscription-options@1.0.25":
-  version "1.0.25"
+"@wix/stores_inventory-items-v-3@1.0.42":
+  version "1.0.42"
+  resolved "https://registry.npmjs.org/@wix/stores_inventory-items-v-3/-/stores_inventory-items-v-3-1.0.42.tgz"
+  integrity sha512-0wOOsXz4bVRkA6Dnof/BXOSdGFxPWuD8dW0CSBjL5jyWksMBvx4+xqsGCfILJ5U1wRoLWMfiBZFUwx/ShUHMMA==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
-"@wix/stores_wishlist@1.0.22":
-  version "1.0.22"
+"@wix/stores_inventory@1.0.68":
+  version "1.0.68"
+  resolved "https://registry.npmjs.org/@wix/stores_inventory/-/stores_inventory-1.0.68.tgz"
+  integrity sha512-OBxZmpSgWGBlakOg+HnOc+yf3wj10G9P5Zx+esM2Tzj7LursD/+csWdFlBcXeWOEtuFCCAwooSH/Fir0fvwuNw==
   dependencies:
-    "@wix/metro-runtime" "^1.1696.0"
-    "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-runtime" "^0.3.14"
-    "@wix/sdk-types" "^1.9.2"
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/stores_products-v-3@1.0.88":
+  version "1.0.88"
+  resolved "https://registry.npmjs.org/@wix/stores_products-v-3/-/stores_products-v-3-1.0.88.tgz"
+  integrity sha512-HkHzXQtwt0TTdZqwBYBK7UpAbnVbJerNL1582hiohy6OYfMF/1b9xXfw1x8s666NE9xUuMjWnoGH3Gm6CEg7AA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/stores_products@1.0.94":
+  version "1.0.94"
+  resolved "https://registry.npmjs.org/@wix/stores_products/-/stores_products-1.0.94.tgz"
+  integrity sha512-B+7EltoabX+CD+dNwI/aOD3JC03BXV4alKvjvqCpSAz+4KEtofBpzf8iIToExST7MdP5MuM2e69nfDDUd+ximQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/stores_ribbons-v-3@1.0.26":
+  version "1.0.26"
+  resolved "https://registry.npmjs.org/@wix/stores_ribbons-v-3/-/stores_ribbons-v-3-1.0.26.tgz"
+  integrity sha512-AL5GwzRvIhQSQeayBFI6l+iiNqC9Yl3Y/NIOQne+7OPMCsSwXvoPwjO1moRccpU3lBDPU2iHKPmpTyMzbcbY9Q==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/stores_stores-locations-v-3@1.0.32":
+  version "1.0.32"
+  resolved "https://registry.npmjs.org/@wix/stores_stores-locations-v-3/-/stores_stores-locations-v-3-1.0.32.tgz"
+  integrity sha512-Kn3C6defm/hwa1JLpLwB0HXyFuWD9EYOV1Sq8hG3bXzQQd+phZ5WfuuZY3aX/i/aSMcHrDV2dMPFOULJBVECKg==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/stores_subscription-options@1.0.50":
+  version "1.0.50"
+  resolved "https://registry.npmjs.org/@wix/stores_subscription-options/-/stores_subscription-options-1.0.50.tgz"
+  integrity sha512-xY2/QBYOldiCydkR3vh9Z5ppKtsBi+Xso+0dmfhlRqHPudRyg+A4HQH5Hqfwz/e9YNduRYhiLoSO/ba9kE44BA==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
+
+"@wix/stores_wishlist@1.0.43":
+  version "1.0.43"
+  resolved "https://registry.npmjs.org/@wix/stores_wishlist/-/stores_wishlist-1.0.43.tgz"
+  integrity sha512-fgL36mTgzfKjthx4wsSlGcRCpkMRK/urissudsk8RbAOtHW8u9jvLde2xyJfLttWEEAG3ZC+t+mpEAmLc5NNdQ==
+  dependencies:
+    "@wix/sdk-runtime" "^0.3.22"
+    "@wix/sdk-types" "^1.12.4"
 
 "@wix/stores@^1.0.71":
-  version "1.0.178"
+  version "1.0.326"
+  resolved "https://registry.npmjs.org/@wix/stores/-/stores-1.0.326.tgz"
+  integrity sha512-wOlDY9dnzmM1XKGWeKeBZudnhwvoe4o8NGDZSb/vhnHPmijBgg7cpyKCavvSF9ca3HOOqxDUyjMgM7J6BBiAWQ==
   dependencies:
-    "@wix/stores_brands-v-3" "1.0.1"
-    "@wix/stores_catalog-provision" "1.0.1"
-    "@wix/stores_collections" "1.0.26"
-    "@wix/stores_customizations-v-3" "1.0.1"
-    "@wix/stores_info-sections-v-3" "1.0.1"
-    "@wix/stores_inventory" "1.0.30"
-    "@wix/stores_inventory-items-v-3" "1.0.3"
-    "@wix/stores_products" "1.0.36"
-    "@wix/stores_products-v-3" "1.0.6"
-    "@wix/stores_ribbons-v-3" "1.0.1"
-    "@wix/stores_stores-locations-v-3" "1.0.1"
-    "@wix/stores_subscription-options" "1.0.25"
-    "@wix/stores_wishlist" "1.0.22"
+    "@wix/stores_brands-v-3" "1.0.30"
+    "@wix/stores_catalog-versioning" "1.0.17"
+    "@wix/stores_collections" "1.0.51"
+    "@wix/stores_customizations-v-3" "1.0.32"
+    "@wix/stores_info-sections-v-3" "1.0.31"
+    "@wix/stores_inventory" "1.0.68"
+    "@wix/stores_inventory-items-v-3" "1.0.42"
+    "@wix/stores_products" "1.0.94"
+    "@wix/stores_products-v-3" "1.0.88"
+    "@wix/stores_ribbons-v-3" "1.0.26"
+    "@wix/stores_stores-locations-v-3" "1.0.32"
+    "@wix/stores_subscription-options" "1.0.50"
+    "@wix/stores_wishlist" "1.0.43"
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -1277,10 +1316,12 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-braces@^3.0.2, braces@~3.0.2:
-  version "3.0.2"
+braces@^3.0.3, braces@~3.0.2:
+  version "3.0.3"
+  resolved "https://registry.npmjs.org/braces/-/braces-3.0.3.tgz"
+  integrity sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==
   dependencies:
-    fill-range "^7.0.1"
+    fill-range "^7.1.1"
 
 browserslist@^4.23.3, "browserslist@>= 4.21.0":
   version "4.23.3"
@@ -1396,13 +1437,6 @@ concat-map@0.0.1:
 consola@^3.2.3:
   version "3.2.3"
 
-constant-case@~3.0.0:
-  version "3.0.4"
-  dependencies:
-    no-case "^3.0.4"
-    tslib "^2.0.3"
-    upper-case "^2.0.2"
-
 cookie-es@^1.0.0:
   version "1.0.0"
 
@@ -1410,7 +1444,9 @@ cookie@^0.5.0:
   version "0.5.0"
 
 cross-spawn@^7.0.2, cross-spawn@^7.0.3:
-  version "7.0.3"
+  version "7.0.6"
+  resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz"
+  integrity sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==
   dependencies:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
@@ -1478,11 +1514,6 @@ deep-equal@^2.0.5:
 
 deep-extend@^0.6.0:
   version "0.6.0"
-
-deep-for-each@~3.0.0:
-  version "3.0.0"
-  dependencies:
-    lodash.isplainobject "^4.0.6"
 
 deep-is@^0.1.3:
   version "0.1.4"
@@ -1933,8 +1964,10 @@ file-entry-cache@^6.0.1:
   dependencies:
     flat-cache "^3.0.4"
 
-fill-range@^7.0.1:
-  version "7.0.1"
+fill-range@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.npmjs.org/fill-range/-/fill-range-7.1.1.tgz"
+  integrity sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==
   dependencies:
     to-regex-range "^5.0.1"
 
@@ -1969,7 +2002,9 @@ flowbite@^1.5.4, flowbite@^1.6.6:
     mini-svg-data-uri "^1.4.3"
 
 follow-redirects@^1.15.2:
-  version "1.15.2"
+  version "1.15.9"
+  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.9.tgz"
+  integrity sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==
 
 for-each@^0.3.3:
   version "0.3.3"
@@ -2178,9 +2213,6 @@ hoist-non-react-statics@^3.3.0:
 http-shutdown@^1.2.2:
   version "1.2.2"
 
-http-status-codes@^2.0.0:
-  version "2.2.0"
-
 human-signals@^2.1.0:
   version "2.1.0"
 
@@ -2353,6 +2385,8 @@ is-number-object@^1.0.4:
 
 is-number@^7.0.0:
   version "7.0.0"
+  resolved "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz"
+  integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
 is-path-inside@^3.0.3:
   version "3.0.3"
@@ -2435,16 +2469,13 @@ jiti@^1.20.0, jiti@^1.21.0:
 jose@^5.2.1:
   version "5.2.2"
 
-js-base64@^3.7.7:
-  version "3.7.7"
-
 js-cookie@^3.0.1:
   version "3.0.5"
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
 
-js-yaml@^4.1.0, js-yaml@~4.1.0:
+js-yaml@^4.1.0:
   version "4.1.0"
   dependencies:
     argparse "^2.0.1"
@@ -2470,9 +2501,6 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonpath-plus@~5.1.0:
-  version "5.1.0"
-
 jsurl@^0.1.5:
   version "0.1.5"
 
@@ -2481,9 +2509,6 @@ jsurl@^0.1.5:
   dependencies:
     array-includes "^3.1.5"
     object.assign "^4.1.3"
-
-kind-of@~5.1.0:
-  version "5.1.0"
 
 language-subtag-registry@~0.3.2:
   version "0.3.22"
@@ -2537,27 +2562,13 @@ lodash.defaults@^4.2.0:
 lodash.isarguments@^3.1.0:
   version "3.1.0"
 
-lodash.isplainobject@^4.0.6:
-  version "4.0.6"
-
 lodash.merge@^4.6.2:
   version "4.6.2"
-
-lodash@^4.17.21, lodash@~4.17.0:
-  version "4.17.21"
-
-long@^4.0.0, long@~4.0.0:
-  version "4.0.0"
 
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
-
-lower-case@^2.0.2:
-  version "2.0.2"
-  dependencies:
-    tslib "^2.0.3"
 
 lru-cache@^10.0.0:
   version "10.0.3"
@@ -2577,9 +2588,11 @@ micro-memoize@^4.1.2:
   version "4.1.2"
 
 micromatch@^4.0.4, micromatch@^4.0.5:
-  version "4.0.5"
+  version "4.0.8"
+  resolved "https://registry.npmjs.org/micromatch/-/micromatch-4.0.8.tgz"
+  integrity sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==
   dependencies:
-    braces "^3.0.2"
+    braces "^3.0.3"
     picomatch "^2.3.1"
 
 mime@^3.0.0:
@@ -2644,8 +2657,10 @@ mz@^2.7.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nanoid@^3.3.4, nanoid@^3.3.7:
-  version "3.3.7"
+nanoid@^3.3.6, nanoid@^3.3.7:
+  version "3.3.8"
+  resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.8.tgz"
+  integrity sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==
 
 napi-build-utils@^1.0.1:
   version "1.0.2"
@@ -2657,32 +2672,27 @@ natural-compare@^1.4.0:
   version "1.4.0"
 
 next@^13.4.9:
-  version "13.4.9"
+  version "13.5.8"
+  resolved "https://registry.npmjs.org/next/-/next-13.5.8.tgz"
+  integrity sha512-VlR7FaXpSibCs7ujOqStaDFTGSdX/NvWgLDcd47oiHUe8i63ZtNkX9intgcYAu/MxpaeEGinHaMB5mwxuzglKw==
   dependencies:
-    "@next/env" "13.4.9"
-    "@swc/helpers" "0.5.1"
+    "@next/env" "13.5.8"
+    "@swc/helpers" "0.5.2"
     busboy "1.6.0"
     caniuse-lite "^1.0.30001406"
-    postcss "8.4.14"
+    postcss "8.4.31"
     styled-jsx "5.1.1"
     watchpack "2.4.0"
-    zod "3.21.4"
   optionalDependencies:
-    "@next/swc-darwin-arm64" "13.4.9"
-    "@next/swc-darwin-x64" "13.4.9"
-    "@next/swc-linux-arm64-gnu" "13.4.9"
-    "@next/swc-linux-arm64-musl" "13.4.9"
-    "@next/swc-linux-x64-gnu" "13.4.9"
-    "@next/swc-linux-x64-musl" "13.4.9"
-    "@next/swc-win32-arm64-msvc" "13.4.9"
-    "@next/swc-win32-ia32-msvc" "13.4.9"
-    "@next/swc-win32-x64-msvc" "13.4.9"
-
-no-case@^3.0.4:
-  version "3.0.4"
-  dependencies:
-    lower-case "^2.0.2"
-    tslib "^2.0.3"
+    "@next/swc-darwin-arm64" "13.5.8"
+    "@next/swc-darwin-x64" "13.5.8"
+    "@next/swc-linux-arm64-gnu" "13.5.8"
+    "@next/swc-linux-arm64-musl" "13.5.8"
+    "@next/swc-linux-x64-gnu" "13.5.8"
+    "@next/swc-linux-x64-musl" "13.5.8"
+    "@next/swc-win32-arm64-msvc" "13.5.8"
+    "@next/swc-win32-ia32-msvc" "13.5.8"
+    "@next/swc-win32-x64-msvc" "13.5.8"
 
 node-abi@^3.3.0:
   version "3.40.0"
@@ -2944,10 +2954,12 @@ postcss@^8.0.0, postcss@^8.1.0, postcss@^8.2.14, postcss@^8.4.19, postcss@^8.4.2
     picocolors "^1.0.1"
     source-map-js "^1.2.0"
 
-postcss@8.4.14:
-  version "8.4.14"
+postcss@8.4.31:
+  version "8.4.31"
+  resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz"
+  integrity sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==
   dependencies:
-    nanoid "^3.3.4"
+    nanoid "^3.3.6"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
@@ -3439,6 +3451,8 @@ titleize@^3.0.0:
 
 to-regex-range@^5.0.1:
   version "5.0.1"
+  resolved "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz"
+  integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
 
@@ -3459,8 +3473,10 @@ tsconfig-paths@^3.14.2:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tslib@^2.0.0, tslib@^2.0.3, tslib@^2.4.0, tslib@^2.4.1, tslib@^2.5.0, tslib@^2.6.3:
-  version "2.6.3"
+tslib@^2.0.0, tslib@^2.4.0, tslib@^2.5.0, tslib@^2.6.3:
+  version "2.8.1"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz"
+  integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
@@ -3569,11 +3585,6 @@ update-browserslist-db@^1.1.0:
     escalade "^3.1.2"
     picocolors "^1.0.1"
 
-upper-case@^2.0.2:
-  version "2.0.2"
-  dependencies:
-    tslib "^2.0.3"
-
 uqr@^0.1.2:
   version "0.1.2"
 
@@ -3670,6 +3681,3 @@ yaml@^2.1.1:
 
 yocto-queue@^0.1.0:
   version "0.1.0"
-
-zod@3.21.4:
-  version "3.21.4"
