@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-!node_modules/@wix/**/*
+!node_modules/@wix/**/*/*
 
 /.pnp
 .pnp.js
